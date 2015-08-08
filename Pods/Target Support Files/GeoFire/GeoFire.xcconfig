@@ -1,0 +1,2 @@
+GEOFIRE_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Firebase"
+GEOFIRE_OTHER_LDFLAGS = -framework "CoreLocation"

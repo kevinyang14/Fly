@@ -1,0 +1,1161 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002A13874F5C6C61B33340CF5E9D88B7 /* GeoFire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8B35E0C0D83D7DC9C0ACBFAC0BFC2F /* GeoFire-dummy.m */; };
+		03D96A8DD24DBEB2FCD07606C1F0A518 /* MGLGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B689BCA6AE4B450D8AE20A6F90902C /* MGLGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05772089EB75EAF430DAFB8AE3280021 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DDD06AA060CF006E0E6AF1D4CEEFFC /* Pods-dummy.m */; };
+		05B99EE0EB306A7D4615660D5A310176 /* mapbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3B568A79F749F31FE86B2E23A75567 /* mapbox@2x.png */; };
+		05CD59014732AE088EFA0ED5CF235CA1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB92D62F4C601AAAE1DF0C8F59BC544 /* SystemConfiguration.framework */; };
+		08F5CF1637A5FD564143FD029C4BF96D /* MapboxGL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 609D91932CD67F13D01C1C304669040A /* MapboxGL-dummy.m */; };
+		0A962904A0291292AE118972D11025B3 /* MGLUserLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFBB26B662B33110686AE168276A100 /* MGLUserLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B4FD5669C5FF9CD40531210F4B146E9 /* MapboxGL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7FD9422702DA33D8D77FC90A6F39BA1 /* MapboxGL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BD2766682E85221EF7D5CA155F567FD /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB75AC429BE4AFA7F2DC137FC991DE4 /* ImageIO.framework */; };
+		0E6D969BFD33A4F921D14F54FC85255A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514CF9E9D6D207FBDF02706B7C95CF45 /* MobileCoreServices.framework */; };
+		15FD340FBFB9963CF6921C9A3713C717 /* MapboxGL.h in Headers */ = {isa = PBXBuildFile; fileRef = F8519DF853E6E8CEB70A6A4DE8ED3E3F /* MapboxGL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19191E26F1D2145E6FD99AA30FEF4CED /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B065182B4398267D255DDBEE867531F /* SVIndefiniteAnimatedView.m */; };
+		19D18F218D82ECBF95C6F324F217F9E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905F6777B32EE2A17C6BD314E524EC08 /* QuartzCore.framework */; };
+		1BD6442AE824046E30385FAF51679450 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4063DB002B4A67F8CA8E6C9303C61D /* Foundation.framework */; };
+		2638EA5BC035E4524973A02734E03B1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4063DB002B4A67F8CA8E6C9303C61D /* Foundation.framework */; };
+		2B22EEB8C2764AA87BBF6FF25B8DA0E4 /* MGLAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1559E7BC79F6DCA22134445DF729534A /* MGLAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E21F07B9073043F54E88A8FCC712D28 /* GeoFire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC8008D0F18A56CA7555C03E1F3FDF31 /* GeoFire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		352C9E94F57D4A51D6BF73B4AB321C0B /* MGLMapView+IBAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2090D86E1638CF1D0EA09B279DC9F0F2 /* MGLMapView+IBAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		394A5EC08C4FFE9D92578652EF6D0262 /* GeoFire.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF8485D4D36E4B77BB7B74467763492 /* GeoFire.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B3EDD205B9C82F14559355E0F69D78C /* MGLAnnotationImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E7C4F22C24F68195192C5AB9F37B070 /* MGLAnnotationImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B6271B054BA1C6156F7CC7AE3F5D706 /* MGLMultiPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = C81D56F66BB7A09B2CFA03FB02269C05 /* MGLMultiPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BFEFCB50E5E2F3C2529BC8745AB6EBD /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A411ACD0353EAB25FE1D5F944C91A720 /* SVProgressHUD-dummy.m */; };
+		3CF1CD91E8494095C5208FF2B1EF7296 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1391D6A3876EC285D4A88647C3C89714 /* SVProgressHUD.m */; };
+		40DDF2B954E1FE458DCEA31C5F72FB8F /* MapboxGL.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8035AED430FA763F085A5C7C9CD44114 /* MapboxGL.bundle */; };
+		464BA21EE820FB5E5E19A5B82CAA3945 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C8B6E2FF15D8A3B96E2D27582B719A /* CoreTelephony.framework */; };
+		48FF035CF776D8E43228D02CFE386865 /* MGLOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 61CCC28903DC65FEE8AAEE1AD34EA80D /* MGLOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AAF92306B4C94B5AE25DA381572AC18 /* styles in Resources */ = {isa = PBXBuildFile; fileRef = 20604DE9B95A80E5C8FACFA8C1629604 /* styles */; };
+		5004C6CEC95861D84BD17716DE20A214 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB4D20585525282406C057748A85AF8 /* GeoFire.m */; };
+		52C1842F6D72B3C5CBCDBBE93CB58F88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4063DB002B4A67F8CA8E6C9303C61D /* Foundation.framework */; };
+		531962C5C21FE16F1D93085C302E45AE /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF7064F7CDBC63D075BFC3EA1717CD4A /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5342DBD2D4A8E6778E148352AB62B51B /* GFRegionQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = FD5207A6CDB0DC0134B869B5FB5E32A4 /* GFRegionQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A6FD4EE65E596A281BD926EEDC464F9 /* Compass@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DFACA0FC055B8692204E562A9D69D89 /* Compass@3x.png */; };
+		5BA702DC44695C199DD027AB1710E063 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905F6777B32EE2A17C6BD314E524EC08 /* QuartzCore.framework */; };
+		5CD940EE3205401B5AF4DFD6DCE5D891 /* MGLDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65B579D9A0B23F3EF717BFEE2C6D66 /* MGLDummy.m */; };
+		5E50DB9FA4A849A4410341D1109C2BB2 /* mapbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 040BAE85D45EB4D13CA1A74B73302F3C /* mapbox.png */; };
+		5E7E00ADDF274514672A4B4525B5D9DF /* GFGeoHashQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = D5FA109104E3336D6E0E766FD6D7D49B /* GFGeoHashQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EA082BBD8BFBD66515D2E736EB0494D /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9172C8B20B194380566A03760808844E /* SVProgressHUD.bundle */; };
+		5EA73AA7C0D5A416761404EFD4D59A23 /* api_mapbox_com-digicert.der in Resources */ = {isa = PBXBuildFile; fileRef = EFC29C793727307050A69060969C6071 /* api_mapbox_com-digicert.der */; };
+		62BEEE20C1FAC318DA6EC9C00505E736 /* MGLMapView.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CB6B77859B7050EF0292A2CF694247 /* MGLMapView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63F208AB1A9B022C10C3BABE1381A5AA /* GFQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 01987E7D7081D340557A1E74BD7C149A /* GFQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A77A14E6E5B47A4EDE56A3F6E49DD3E /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = ADADDB55A00E58237EF1B9899EFAFA95 /* GFGeoHash.m */; };
+		6D41064E0344EDAA0E42448271F52F69 /* Compass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6529681C2EBDD6257757DBEBE04FB9 /* Compass@2x.png */; };
+		6F86C81B73E9E35DAD8E8A13E8013DC5 /* MGLShape.h in Headers */ = {isa = PBXBuildFile; fileRef = F3DF3CF1EAA4F471512A65075332EFDC /* MGLShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75E502B983475D22868471C1187D03AC /* MGLPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = CCEA7E711C4485DF5F69AB96F450CDEF /* MGLPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		787DD1F45E71243F879EB790EB5750F0 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBE936A15892A3D7535334F6478315F /* GFQuery.m */; };
+		7AF2F509350C8A0B7F66775610291F1B /* GFQuery+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1434A5C0F150B0E7C53F0A195E8ECF6E /* GFQuery+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8655534526557C660413FEDCDF12E611 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = F228255E892C1868F3CDC42A42EB2921 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B1F0C274B08CE34E31266EBF1AC2CAC /* Compass.png in Resources */ = {isa = PBXBuildFile; fileRef = EEC1845A39C66ADE0B66549B70E5183A /* Compass.png */; };
+		9FD32A1CA7C1DAA90EC5FB875451E46F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC01FB61110D53F3CDA8A9053E5B15CB /* CoreLocation.framework */; };
+		A8DA8E0360CAC05AB2F1ED696AD66288 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6F2D24CE0B8689EC94ABC090C3A050 /* GLKit.framework */; };
+		B2CBAE1E32DBEAF4A64CAE006A19414B /* api_mapbox_com-geotrust.der in Resources */ = {isa = PBXBuildFile; fileRef = B946814DE64D2696A88B8C5F54E548B4 /* api_mapbox_com-geotrust.der */; };
+		B41AC808D2C438A4A49BDA4D17F6E14C /* star_tilestream_net.der in Resources */ = {isa = PBXBuildFile; fileRef = 75E460A18010A0921ABC17E67AC34925 /* star_tilestream_net.der */; };
+		B4EAF77E3E14143A961E35FCCCD2CE3C /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F15C99E69C2AB9A49620BDC42A24863 /* GFGeoHashQuery.m */; };
+		BCCB3E3D019E6540232845D3304F6CF3 /* GFCircleQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 03245A31BAD78ABCA0B76F2A30316683 /* GFCircleQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA6AFEEB4B9370F2BAB30798EC23038E /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = F278759E99F91FA6D91669F5ADE69371 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0935AADACBF660961B3DEF0A632ADCE /* GFGeoHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 77C0C42725AA032AB78D997385175523 /* GFGeoHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D190BACE6E51A8C09451226C7E5ABDF8 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = FD959EEF383EF924426875043AB15869 /* GFBase32Utils.m */; };
+		D27E9322A005E64A244199E749CD627F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC01FB61110D53F3CDA8A9053E5B15CB /* CoreLocation.framework */; };
+		D2EF0BF25FADB735CD91047BB69AEFED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4063DB002B4A67F8CA8E6C9303C61D /* Foundation.framework */; };
+		D77D58A7AC2792EC25CD471590C6D558 /* MGLAccountManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 79567EE16C235F8808CD00D863EA0B74 /* MGLAccountManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D90052850BBE03039D16344D207155AC /* GFBase32Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B409434F00C28962EE1CC0EAAC1E51 /* GFBase32Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBE3A7B81346BEC4CA68B6179A3F3FD6 /* mapbox@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B599932B01D9B16CE1E638D746A0C7 /* mapbox@3x.png */; };
+		DEF23431D1AC17D794C38931B8F891CE /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5ED6AEF4CDC6E5BEED39A282DA69B73 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFE20EC0889D4038F176A3DE112C5C54 /* MGLTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 7787B8E3E8176A13E45D461AD9D38939 /* MGLTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F04434C9132BC61BA408988B4D6105F4 /* MGLPolyline.h in Headers */ = {isa = PBXBuildFile; fileRef = F7F5A4A910609D13AF575CE8822EC9F8 /* MGLPolyline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2F12347ED46F8BF0162544992DFE024 /* MGLPointAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A323944D25E27602A97559BC11731E /* MGLPointAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3C8B5574B1E03ECBABCA68BBB391C2F /* GeoFire+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6D0B147B6251C7D1107F1BF24D04C9 /* GeoFire+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D5D36625D35107B5D906A41F61B3BDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D104A0B196B3A9F996A6DA5177B06D9F;
+			remoteInfo = MapboxGL;
+		};
+		886D5930D111A63F8F28CAEBEABCF9DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F559F9D7B583AFC9BD12B5E082C8439;
+			remoteInfo = GeoFire;
+		};
+		D70A35CFE0D7733E4531E47214E64ADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F22B42EF0B56ACAD65AB651906EF6055;
+			remoteInfo = "MapboxGL-MapboxGL";
+		};
+		F2CC28C249B54153C8B9D8BC7534CCFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06D74CA90B495A93E00D059B6F66C2AF;
+			remoteInfo = SVProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01987E7D7081D340557A1E74BD7C149A /* GFQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GFQuery.h; path = GeoFire/API/GFQuery.h; sourceTree = "<group>"; };
+		031856B1998EB484602AB7B95DC5EC00 /* MapboxGL-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MapboxGL-Private.xcconfig"; sourceTree = "<group>"; };
+		03245A31BAD78ABCA0B76F2A30316683 /* GFCircleQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GFCircleQuery.h; path = GeoFire/API/GFCircleQuery.h; sourceTree = "<group>"; };
+		040BAE85D45EB4D13CA1A74B73302F3C /* mapbox.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = mapbox.png; path = MapboxGL.bundle/mapbox.png; sourceTree = "<group>"; };
+		0D2AD249068221EAC1078D44F02C3EF7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11C8B6E2FF15D8A3B96E2D27582B719A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		1391D6A3876EC285D4A88647C3C89714 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		1434A5C0F150B0E7C53F0A195E8ECF6E /* GFQuery+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GFQuery+Private.h"; path = "GeoFire/Implementation/GFQuery+Private.h"; sourceTree = "<group>"; };
+		1559E7BC79F6DCA22134445DF729534A /* MGLAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGLAnnotation.h; path = Headers/MGLAnnotation.h; sourceTree = "<group>"; };
+		15E21B6542920AA9BE7A0DB7D5595BEC /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		17465E07B6E57FD1F394DA2AF4520D8A /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		1B065182B4398267D255DDBEE867531F /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		1ED01A0060669625D0BDC42BFA861DE3 /* MapboxGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20604DE9B95A80E5C8FACFA8C1629604 /* styles */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = styles; path = MapboxGL.bundle/styles; sourceTree = "<group>"; };
+		2090D86E1638CF1D0EA09B279DC9F0F2 /* MGLMapView+IBAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MGLMapView+IBAdditions.h"; path = "Headers/MGLMapView+IBAdditions.h"; sourceTree = "<group>"; };
+		22B599932B01D9B16CE1E638D746A0C7 /* mapbox@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mapbox@3x.png"; path = "MapboxGL.bundle/mapbox@3x.png"; sourceTree = "<group>"; };
+		288ED6B8B63B978841D74CCD62FA208A /* libMapboxGL.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libMapboxGL.a; sourceTree = "<group>"; };
+		2B20071E3D85610CF3AE0984569C08F0 /* GeoFire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GeoFire.modulemap; sourceTree = "<group>"; };
+		2D6529681C2EBDD6257757DBEBE04FB9 /* Compass@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Compass@2x.png"; path = "MapboxGL.bundle/Compass@2x.png"; sourceTree = "<group>"; };
+		39DDD06AA060CF006E0E6AF1D4CEEFFC /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		3E265AD30BBD5A46C9C92E63BBF1B4D8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		3E7C4F22C24F68195192C5AB9F37B070 /* MGLAnnotationImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGLAnnotationImage.h; path = Headers/MGLAnnotationImage.h; sourceTree = "<group>"; };
+		4702381FC10223A2D550C3D5BBE44B06 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4063DB002B4A67F8CA8E6C9303C61D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4D6F2D24CE0B8689EC94ABC090C3A050 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		4EB4D20585525282406C057748A85AF8 /* GeoFire.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GeoFire.m; path = GeoFire/Implementation/GeoFire.m; sourceTree = "<group>"; };
+		514CF9E9D6D207FBDF02706B7C95CF45 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		51E2A3E05B8478448FFC77D89D54E54E /* GeoFire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GeoFire-Private.xcconfig"; sourceTree = "<group>"; };
+		564C423B1D413444D250BF8649D98632 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		5F15C99E69C2AB9A49620BDC42A24863 /* GFGeoHashQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GFGeoHashQuery.m; path = GeoFire/Implementation/GFGeoHashQuery.m; sourceTree = "<group>"; };
+		609D91932CD67F13D01C1C304669040A /* MapboxGL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxGL-dummy.m"; sourceTree = "<group>"; };
+		60F81BA58D47761ED21C8F01D64C1AF9 /* MapboxGL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxGL.xcconfig; sourceTree = "<group>"; };
+		61CCC28903DC65FEE8AAEE1AD34EA80D /* MGLOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGLOverlay.h; path = Headers/MGLOverlay.h; sourceTree = "<group>"; };
+		62BC92A7015D9CD725D94DEE6F940215 /* SVProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SVProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
+		642CB62315C2BD84329E59C8F53572AB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69B5D50BF75B2D3A3D5DD5368260CEE0 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DFACA0FC055B8692204E562A9D69D89 /* Compass@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Compass@3x.png"; path = "MapboxGL.bundle/Compass@3x.png"; sourceTree = "<group>"; };
+		71CB6B77859B7050EF0292A2CF694247 /* MGLMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGLMapView.h; path = Headers/MGLMapView.h; sourceTree = "<group>"; };
+		75E460A18010A0921ABC17E67AC34925 /* star_tilestream_net.der */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = star_tilestream_net.der; path = MapboxGL.bundle/star_tilestream_net.der; sourceTree = "<group>"; };
+		7787B8E3E8176A13E45D461AD9D38939 /* MGLTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGLTypes.h; path = Headers/MGLTypes.h; sourceTree = "<group>"; };
+		77C0C42725AA032AB78D997385175523 /* GFGeoHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GFGeoHash.h; path = GeoFire/Implementation/GFGeoHash.h; sourceTree = "<group>"; };
+		79567EE16C235F8808CD00D863EA0B74 /* MGLAccountManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGLAccountManager.h; path = Headers/MGLAccountManager.h; sourceTree = "<group>"; };
+		7DB75AC429BE4AFA7F2DC137FC991DE4 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		7DE536C73B92C2CD016C5533A94AC8F1 /* GeoFire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GeoFire.xcconfig; sourceTree = "<group>"; };
+		8035AED430FA763F085A5C7C9CD44114 /* MapboxGL.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapboxGL.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E2D84F8671B879BBD0AAFA415146356 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		8EEAC32DCE917B6FD56658799EEBF4F1 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		8FFBB26B662B33110686AE168276A100 /* MGLUserLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGLUserLocation.h; path = Headers/MGLUserLocation.h; sourceTree = "<group>"; };
+		905F6777B32EE2A17C6BD314E524EC08 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		9172C8B20B194380566A03760808844E /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		A0B409434F00C28962EE1CC0EAAC1E51 /* GFBase32Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GFBase32Utils.h; path = GeoFire/Implementation/GFBase32Utils.h; sourceTree = "<group>"; };
+		A411ACD0353EAB25FE1D5F944C91A720 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		A98E9599CD556554A7B06BCF8F549AE1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		AD61C49D17010919BD6592F3531C6EBA /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AD6D0B147B6251C7D1107F1BF24D04C9 /* GeoFire+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GeoFire+Private.h"; path = "GeoFire/Implementation/GeoFire+Private.h"; sourceTree = "<group>"; };
+		AD981F9843117772BC2E7E071BD59198 /* GeoFire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GeoFire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADADDB55A00E58237EF1B9899EFAFA95 /* GFGeoHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GFGeoHash.m; path = GeoFire/Implementation/GFGeoHash.m; sourceTree = "<group>"; };
+		B6B689BCA6AE4B450D8AE20A6F90902C /* MGLGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGLGeometry.h; path = Headers/MGLGeometry.h; sourceTree = "<group>"; };
+		B7FD9422702DA33D8D77FC90A6F39BA1 /* MapboxGL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxGL-umbrella.h"; sourceTree = "<group>"; };
+		B8462A14480328AAD287A21A18DF137A /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		B946814DE64D2696A88B8C5F54E548B4 /* api_mapbox_com-geotrust.der */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "api_mapbox_com-geotrust.der"; path = "MapboxGL.bundle/api_mapbox_com-geotrust.der"; sourceTree = "<group>"; };
+		BB65B579D9A0B23F3EF717BFEE2C6D66 /* MGLDummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MGLDummy.m; sourceTree = "<group>"; };
+		C5ED6AEF4CDC6E5BEED39A282DA69B73 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		C6A323944D25E27602A97559BC11731E /* MGLPointAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGLPointAnnotation.h; path = Headers/MGLPointAnnotation.h; sourceTree = "<group>"; };
+		C81D56F66BB7A09B2CFA03FB02269C05 /* MGLMultiPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGLMultiPoint.h; path = Headers/MGLMultiPoint.h; sourceTree = "<group>"; };
+		C88113A79685B4EFEE7BAD12896829F7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CC8008D0F18A56CA7555C03E1F3FDF31 /* GeoFire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GeoFire-umbrella.h"; sourceTree = "<group>"; };
+		CCEA7E711C4485DF5F69AB96F450CDEF /* MGLPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGLPolygon.h; path = Headers/MGLPolygon.h; sourceTree = "<group>"; };
+		D5FA109104E3336D6E0E766FD6D7D49B /* GFGeoHashQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GFGeoHashQuery.h; path = GeoFire/Implementation/GFGeoHashQuery.h; sourceTree = "<group>"; };
+		D85F62D8EE5177C81846DCFEC53F1D67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92D6D83CA1127C9165D8866ECEBD498 /* MapboxGL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxGL-prefix.pch"; sourceTree = "<group>"; };
+		DAB92D62F4C601AAAE1DF0C8F59BC544 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		DAF8485D4D36E4B77BB7B74467763492 /* GeoFire.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoFire.h; path = GeoFire/API/GeoFire.h; sourceTree = "<group>"; };
+		DE2B4E48A861EA25354A1A32D8C5E7AB /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		E6A4A77618A70CEEB6F6BC81ADECE223 /* GeoFire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GeoFire-prefix.pch"; sourceTree = "<group>"; };
+		E75B3922BB759950643AC80AFAB37437 /* MapboxGL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MapboxGL.modulemap; sourceTree = "<group>"; };
+		E8FDD6ACAEDB6608D372D0BEE6AF6ED4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBBE936A15892A3D7535334F6478315F /* GFQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GFQuery.m; path = GeoFire/Implementation/GFQuery.m; sourceTree = "<group>"; };
+		EC01FB61110D53F3CDA8A9053E5B15CB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		EEC1845A39C66ADE0B66549B70E5183A /* Compass.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Compass.png; path = MapboxGL.bundle/Compass.png; sourceTree = "<group>"; };
+		EF7064F7CDBC63D075BFC3EA1717CD4A /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		EF8B35E0C0D83D7DC9C0ACBFAC0BFC2F /* GeoFire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GeoFire-dummy.m"; sourceTree = "<group>"; };
+		EFC29C793727307050A69060969C6071 /* api_mapbox_com-digicert.der */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "api_mapbox_com-digicert.der"; path = "MapboxGL.bundle/api_mapbox_com-digicert.der"; sourceTree = "<group>"; };
+		F228255E892C1868F3CDC42A42EB2921 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		F278759E99F91FA6D91669F5ADE69371 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		F3DF3CF1EAA4F471512A65075332EFDC /* MGLShape.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGLShape.h; path = Headers/MGLShape.h; sourceTree = "<group>"; };
+		F7F5A4A910609D13AF575CE8822EC9F8 /* MGLPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGLPolyline.h; path = Headers/MGLPolyline.h; sourceTree = "<group>"; };
+		F8519DF853E6E8CEB70A6A4DE8ED3E3F /* MapboxGL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapboxGL.h; path = Headers/MapboxGL.h; sourceTree = "<group>"; };
+		FD3B568A79F749F31FE86B2E23A75567 /* mapbox@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mapbox@2x.png"; path = "MapboxGL.bundle/mapbox@2x.png"; sourceTree = "<group>"; };
+		FD5207A6CDB0DC0134B869B5FB5E32A4 /* GFRegionQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GFRegionQuery.h; path = GeoFire/API/GFRegionQuery.h; sourceTree = "<group>"; };
+		FD959EEF383EF924426875043AB15869 /* GFBase32Utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GFBase32Utils.m; path = GeoFire/Implementation/GFBase32Utils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		078F48E0CC1EB7E77540AD0FB308759A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D9628C25CC4CEC0E9C2B4B2EC00DC5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2638EA5BC035E4524973A02734E03B1F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5521CC6408F00D7E8D528EDE389FA56D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27E9322A005E64A244199E749CD627F /* CoreLocation.framework in Frameworks */,
+				D2EF0BF25FADB735CD91047BB69AEFED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		977772289150FE25490C619A9993BCED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD6442AE824046E30385FAF51679450 /* Foundation.framework in Frameworks */,
+				5BA702DC44695C199DD027AB1710E063 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7ED9F8A27361C2C181F93296851031 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD32A1CA7C1DAA90EC5FB875451E46F /* CoreLocation.framework in Frameworks */,
+				464BA21EE820FB5E5E19A5B82CAA3945 /* CoreTelephony.framework in Frameworks */,
+				52C1842F6D72B3C5CBCDBBE93CB58F88 /* Foundation.framework in Frameworks */,
+				A8DA8E0360CAC05AB2F1ED696AD66288 /* GLKit.framework in Frameworks */,
+				0BD2766682E85221EF7D5CA155F567FD /* ImageIO.framework in Frameworks */,
+				0E6D969BFD33A4F921D14F54FC85255A /* MobileCoreServices.framework in Frameworks */,
+				19D18F218D82ECBF95C6F324F217F9E6 /* QuartzCore.framework in Frameworks */,
+				05CD59014732AE088EFA0ED5CF235CA1 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01E39F8317B7E1EE7A2CB24CEB0F354F /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				A0B409434F00C28962EE1CC0EAAC1E51 /* GFBase32Utils.h */,
+				FD959EEF383EF924426875043AB15869 /* GFBase32Utils.m */,
+				03245A31BAD78ABCA0B76F2A30316683 /* GFCircleQuery.h */,
+				77C0C42725AA032AB78D997385175523 /* GFGeoHash.h */,
+				ADADDB55A00E58237EF1B9899EFAFA95 /* GFGeoHash.m */,
+				D5FA109104E3336D6E0E766FD6D7D49B /* GFGeoHashQuery.h */,
+				5F15C99E69C2AB9A49620BDC42A24863 /* GFGeoHashQuery.m */,
+				01987E7D7081D340557A1E74BD7C149A /* GFQuery.h */,
+				EBBE936A15892A3D7535334F6478315F /* GFQuery.m */,
+				1434A5C0F150B0E7C53F0A195E8ECF6E /* GFQuery+Private.h */,
+				FD5207A6CDB0DC0134B869B5FB5E32A4 /* GFRegionQuery.h */,
+				DAF8485D4D36E4B77BB7B74467763492 /* GeoFire.h */,
+				4EB4D20585525282406C057748A85AF8 /* GeoFire.m */,
+				AD6D0B147B6251C7D1107F1BF24D04C9 /* GeoFire+Private.h */,
+				310E99D921113D345926A6C87AB98C29 /* Support Files */,
+			);
+			path = GeoFire;
+			sourceTree = "<group>";
+		};
+		310E99D921113D345926A6C87AB98C29 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B20071E3D85610CF3AE0984569C08F0 /* GeoFire.modulemap */,
+				7DE536C73B92C2CD016C5533A94AC8F1 /* GeoFire.xcconfig */,
+				51E2A3E05B8478448FFC77D89D54E54E /* GeoFire-Private.xcconfig */,
+				EF8B35E0C0D83D7DC9C0ACBFAC0BFC2F /* GeoFire-dummy.m */,
+				E6A4A77618A70CEEB6F6BC81ADECE223 /* GeoFire-prefix.pch */,
+				CC8008D0F18A56CA7555C03E1F3FDF31 /* GeoFire-umbrella.h */,
+				D85F62D8EE5177C81846DCFEC53F1D67 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GeoFire";
+			sourceTree = "<group>";
+		};
+		58AE3C25F6FCFE6FE87FB7EEC526F02B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC01FB61110D53F3CDA8A9053E5B15CB /* CoreLocation.framework */,
+				11C8B6E2FF15D8A3B96E2D27582B719A /* CoreTelephony.framework */,
+				4A4063DB002B4A67F8CA8E6C9303C61D /* Foundation.framework */,
+				4D6F2D24CE0B8689EC94ABC090C3A050 /* GLKit.framework */,
+				7DB75AC429BE4AFA7F2DC137FC991DE4 /* ImageIO.framework */,
+				514CF9E9D6D207FBDF02706B7C95CF45 /* MobileCoreServices.framework */,
+				905F6777B32EE2A17C6BD314E524EC08 /* QuartzCore.framework */,
+				DAB92D62F4C601AAAE1DF0C8F59BC544 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5B5A4FDD3C70E5BDC2BBCBBBBD01F157 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D2AD249068221EAC1078D44F02C3EF7 /* Info.plist */,
+				17465E07B6E57FD1F394DA2AF4520D8A /* Pods.modulemap */,
+				AD61C49D17010919BD6592F3531C6EBA /* Pods-acknowledgements.markdown */,
+				DE2B4E48A861EA25354A1A32D8C5E7AB /* Pods-acknowledgements.plist */,
+				39DDD06AA060CF006E0E6AF1D4CEEFFC /* Pods-dummy.m */,
+				15E21B6542920AA9BE7A0DB7D5595BEC /* Pods-frameworks.sh */,
+				8E2D84F8671B879BBD0AAFA415146356 /* Pods-resources.sh */,
+				C5ED6AEF4CDC6E5BEED39A282DA69B73 /* Pods-umbrella.h */,
+				A98E9599CD556554A7B06BCF8F549AE1 /* Pods.debug.xcconfig */,
+				3E265AD30BBD5A46C9C92E63BBF1B4D8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		5E1F3384B1B39575144FEBFCF3210CCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58AE3C25F6FCFE6FE87FB7EEC526F02B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				C88113A79685B4EFEE7BAD12896829F7 /* Podfile */,
+				5E1F3384B1B39575144FEBFCF3210CCC /* Frameworks */,
+				EF447B4E1DFAE4F853BEEBB25E70B50E /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				848A6CE8DA3504A266A17F635DC3683A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		848A6CE8DA3504A266A17F635DC3683A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B5A4FDD3C70E5BDC2BBCBBBBD01F157 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8A1801098EA11EFDA39DE1BADFFF011F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9172C8B20B194380566A03760808844E /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8FE3527D91F3C3E53A6AC5DC59BB5326 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EEC1845A39C66ADE0B66549B70E5183A /* Compass.png */,
+				2D6529681C2EBDD6257757DBEBE04FB9 /* Compass@2x.png */,
+				6DFACA0FC055B8692204E562A9D69D89 /* Compass@3x.png */,
+				EFC29C793727307050A69060969C6071 /* api_mapbox_com-digicert.der */,
+				B946814DE64D2696A88B8C5F54E548B4 /* api_mapbox_com-geotrust.der */,
+				040BAE85D45EB4D13CA1A74B73302F3C /* mapbox.png */,
+				FD3B568A79F749F31FE86B2E23A75567 /* mapbox@2x.png */,
+				22B599932B01D9B16CE1E638D746A0C7 /* mapbox@3x.png */,
+				75E460A18010A0921ABC17E67AC34925 /* star_tilestream_net.der */,
+				20604DE9B95A80E5C8FACFA8C1629604 /* styles */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B460A483651366D6312C1391C55FBD5E /* MapboxGL */ = {
+			isa = PBXGroup;
+			children = (
+				79567EE16C235F8808CD00D863EA0B74 /* MGLAccountManager.h */,
+				1559E7BC79F6DCA22134445DF729534A /* MGLAnnotation.h */,
+				3E7C4F22C24F68195192C5AB9F37B070 /* MGLAnnotationImage.h */,
+				BB65B579D9A0B23F3EF717BFEE2C6D66 /* MGLDummy.m */,
+				B6B689BCA6AE4B450D8AE20A6F90902C /* MGLGeometry.h */,
+				71CB6B77859B7050EF0292A2CF694247 /* MGLMapView.h */,
+				2090D86E1638CF1D0EA09B279DC9F0F2 /* MGLMapView+IBAdditions.h */,
+				C81D56F66BB7A09B2CFA03FB02269C05 /* MGLMultiPoint.h */,
+				61CCC28903DC65FEE8AAEE1AD34EA80D /* MGLOverlay.h */,
+				C6A323944D25E27602A97559BC11731E /* MGLPointAnnotation.h */,
+				CCEA7E711C4485DF5F69AB96F450CDEF /* MGLPolygon.h */,
+				F7F5A4A910609D13AF575CE8822EC9F8 /* MGLPolyline.h */,
+				F3DF3CF1EAA4F471512A65075332EFDC /* MGLShape.h */,
+				7787B8E3E8176A13E45D461AD9D38939 /* MGLTypes.h */,
+				8FFBB26B662B33110686AE168276A100 /* MGLUserLocation.h */,
+				F8519DF853E6E8CEB70A6A4DE8ED3E3F /* MapboxGL.h */,
+				B78D4E580773A5BECAE26DF1BE11A615 /* Frameworks */,
+				8FE3527D91F3C3E53A6AC5DC59BB5326 /* Resources */,
+				FD06278BB9E74DAE2463C35F4998D56F /* Support Files */,
+			);
+			path = MapboxGL;
+			sourceTree = "<group>";
+		};
+		B78D4E580773A5BECAE26DF1BE11A615 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				288ED6B8B63B978841D74CCD62FA208A /* libMapboxGL.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6FE4FE8A901AC9EEB7BE8A15BB58751 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F228255E892C1868F3CDC42A42EB2921 /* SVIndefiniteAnimatedView.h */,
+				1B065182B4398267D255DDBEE867531F /* SVIndefiniteAnimatedView.m */,
+				F278759E99F91FA6D91669F5ADE69371 /* SVProgressHUD.h */,
+				1391D6A3876EC285D4A88647C3C89714 /* SVProgressHUD.m */,
+				8A1801098EA11EFDA39DE1BADFFF011F /* Resources */,
+				D90CF9492B6E239142A633ADF83CF12F /* Support Files */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD981F9843117772BC2E7E071BD59198 /* GeoFire.framework */,
+				8035AED430FA763F085A5C7C9CD44114 /* MapboxGL.bundle */,
+				1ED01A0060669625D0BDC42BFA861DE3 /* MapboxGL.framework */,
+				4702381FC10223A2D550C3D5BBE44B06 /* Pods.framework */,
+				69B5D50BF75B2D3A3D5DD5368260CEE0 /* SVProgressHUD.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D90CF9492B6E239142A633ADF83CF12F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8FDD6ACAEDB6608D372D0BEE6AF6ED4 /* Info.plist */,
+				8EEAC32DCE917B6FD56658799EEBF4F1 /* SVProgressHUD.modulemap */,
+				564C423B1D413444D250BF8649D98632 /* SVProgressHUD.xcconfig */,
+				62BC92A7015D9CD725D94DEE6F940215 /* SVProgressHUD-Private.xcconfig */,
+				A411ACD0353EAB25FE1D5F944C91A720 /* SVProgressHUD-dummy.m */,
+				B8462A14480328AAD287A21A18DF137A /* SVProgressHUD-prefix.pch */,
+				EF7064F7CDBC63D075BFC3EA1717CD4A /* SVProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		E81AD77C9E5F647DB6FFD69BD479CA85 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		EF447B4E1DFAE4F853BEEBB25E70B50E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E81AD77C9E5F647DB6FFD69BD479CA85 /* Firebase */,
+				01E39F8317B7E1EE7A2CB24CEB0F354F /* GeoFire */,
+				B460A483651366D6312C1391C55FBD5E /* MapboxGL */,
+				C6FE4FE8A901AC9EEB7BE8A15BB58751 /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD06278BB9E74DAE2463C35F4998D56F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				642CB62315C2BD84329E59C8F53572AB /* Info.plist */,
+				E75B3922BB759950643AC80AFAB37437 /* MapboxGL.modulemap */,
+				60F81BA58D47761ED21C8F01D64C1AF9 /* MapboxGL.xcconfig */,
+				031856B1998EB484602AB7B95DC5EC00 /* MapboxGL-Private.xcconfig */,
+				609D91932CD67F13D01C1C304669040A /* MapboxGL-dummy.m */,
+				D92D6D83CA1127C9165D8866ECEBD498 /* MapboxGL-prefix.pch */,
+				B7FD9422702DA33D8D77FC90A6F39BA1 /* MapboxGL-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MapboxGL";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		17F33583ED45EC5F441DFEF673084289 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D77D58A7AC2792EC25CD471590C6D558 /* MGLAccountManager.h in Headers */,
+				2B22EEB8C2764AA87BBF6FF25B8DA0E4 /* MGLAnnotation.h in Headers */,
+				3B3EDD205B9C82F14559355E0F69D78C /* MGLAnnotationImage.h in Headers */,
+				03D96A8DD24DBEB2FCD07606C1F0A518 /* MGLGeometry.h in Headers */,
+				352C9E94F57D4A51D6BF73B4AB321C0B /* MGLMapView+IBAdditions.h in Headers */,
+				62BEEE20C1FAC318DA6EC9C00505E736 /* MGLMapView.h in Headers */,
+				3B6271B054BA1C6156F7CC7AE3F5D706 /* MGLMultiPoint.h in Headers */,
+				48FF035CF776D8E43228D02CFE386865 /* MGLOverlay.h in Headers */,
+				F2F12347ED46F8BF0162544992DFE024 /* MGLPointAnnotation.h in Headers */,
+				75E502B983475D22868471C1187D03AC /* MGLPolygon.h in Headers */,
+				F04434C9132BC61BA408988B4D6105F4 /* MGLPolyline.h in Headers */,
+				6F86C81B73E9E35DAD8E8A13E8013DC5 /* MGLShape.h in Headers */,
+				DFE20EC0889D4038F176A3DE112C5C54 /* MGLTypes.h in Headers */,
+				0A962904A0291292AE118972D11025B3 /* MGLUserLocation.h in Headers */,
+				0B4FD5669C5FF9CD40531210F4B146E9 /* MapboxGL-umbrella.h in Headers */,
+				15FD340FBFB9963CF6921C9A3713C717 /* MapboxGL.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9247C6C615F51624ACE0F679CB05B73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8655534526557C660413FEDCDF12E611 /* SVIndefiniteAnimatedView.h in Headers */,
+				531962C5C21FE16F1D93085C302E45AE /* SVProgressHUD-umbrella.h in Headers */,
+				CA6AFEEB4B9370F2BAB30798EC23038E /* SVProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B860C70CDDC728AD4E44A2682258C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90052850BBE03039D16344D207155AC /* GFBase32Utils.h in Headers */,
+				BCCB3E3D019E6540232845D3304F6CF3 /* GFCircleQuery.h in Headers */,
+				D0935AADACBF660961B3DEF0A632ADCE /* GFGeoHash.h in Headers */,
+				5E7E00ADDF274514672A4B4525B5D9DF /* GFGeoHashQuery.h in Headers */,
+				7AF2F509350C8A0B7F66775610291F1B /* GFQuery+Private.h in Headers */,
+				63F208AB1A9B022C10C3BABE1381A5AA /* GFQuery.h in Headers */,
+				5342DBD2D4A8E6778E148352AB62B51B /* GFRegionQuery.h in Headers */,
+				F3C8B5574B1E03ECBABCA68BBB391C2F /* GeoFire+Private.h in Headers */,
+				2E21F07B9073043F54E88A8FCC712D28 /* GeoFire-umbrella.h in Headers */,
+				394A5EC08C4FFE9D92578652EF6D0262 /* GeoFire.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D783CE56CB9532D484A5F3667FAD7B16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF23431D1AC17D794C38931B8F891CE /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06D74CA90B495A93E00D059B6F66C2AF /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 927B5E9A25944615D25DBD770D0AB9BE /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				CB5A69C7713C5A791A369018274718C7 /* Sources */,
+				977772289150FE25490C619A9993BCED /* Frameworks */,
+				A9247C6C615F51624ACE0F679CB05B73 /* Headers */,
+				6CBC99801D88E4C1BDDEEBD46AE611D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = 69B5D50BF75B2D3A3D5DD5368260CEE0 /* SVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F559F9D7B583AFC9BD12B5E082C8439 /* GeoFire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2729F8A3B2A8F2E7E24C579D36A99F93 /* Build configuration list for PBXNativeTarget "GeoFire" */;
+			buildPhases = (
+				4CCF7517E9583D4C3D8D595BEA0D17AE /* Sources */,
+				5521CC6408F00D7E8D528EDE389FA56D /* Frameworks */,
+				B5B860C70CDDC728AD4E44A2682258C6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoFire;
+			productName = GeoFire;
+			productReference = AD981F9843117772BC2E7E071BD59198 /* GeoFire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1AA0C7E8C4A32017862EF6BE93C8077 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6847A1E63029B89B4CCC6E3C50945E8A /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				B949E7881FA0A4CF469A89D45B491569 /* Sources */,
+				4D9628C25CC4CEC0E9C2B4B2EC00DC5E /* Frameworks */,
+				D783CE56CB9532D484A5F3667FAD7B16 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				640322D54C5F5299E7C67A96FC2C69F6 /* PBXTargetDependency */,
+				76CBEE19A60F27C2064B05523FB65666 /* PBXTargetDependency */,
+				C1ADC536DB5D357F6B4B51441AEB51A8 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 4702381FC10223A2D550C3D5BBE44B06 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D104A0B196B3A9F996A6DA5177B06D9F /* MapboxGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 998A39BF36CD36C59F1791DC772FDC3E /* Build configuration list for PBXNativeTarget "MapboxGL" */;
+			buildPhases = (
+				3664EE180DB054DA283B3837BFFCAA8A /* Sources */,
+				9D7ED9F8A27361C2C181F93296851031 /* Frameworks */,
+				F25A14C760F24485D7572AE9459540D2 /* Resources */,
+				17F33583ED45EC5F441DFEF673084289 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B0441F091D15880FDF96697DCDEDB68 /* PBXTargetDependency */,
+			);
+			name = MapboxGL;
+			productName = MapboxGL;
+			productReference = 1ED01A0060669625D0BDC42BFA861DE3 /* MapboxGL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F22B42EF0B56ACAD65AB651906EF6055 /* MapboxGL-MapboxGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D8FB3ABCB0498503944E055AADCA1A2 /* Build configuration list for PBXNativeTarget "MapboxGL-MapboxGL" */;
+			buildPhases = (
+				00091BEC1DF7CF9EEADB36D99FBE5199 /* Sources */,
+				078F48E0CC1EB7E77540AD0FB308759A /* Frameworks */,
+				5EC9AFEBD83CF27AB72A80A79552034A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MapboxGL-MapboxGL";
+			productName = "MapboxGL-MapboxGL";
+			productReference = 8035AED430FA763F085A5C7C9CD44114 /* MapboxGL.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F559F9D7B583AFC9BD12B5E082C8439 /* GeoFire */,
+				D104A0B196B3A9F996A6DA5177B06D9F /* MapboxGL */,
+				F22B42EF0B56ACAD65AB651906EF6055 /* MapboxGL-MapboxGL */,
+				A1AA0C7E8C4A32017862EF6BE93C8077 /* Pods */,
+				06D74CA90B495A93E00D059B6F66C2AF /* SVProgressHUD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EC9AFEBD83CF27AB72A80A79552034A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B1F0C274B08CE34E31266EBF1AC2CAC /* Compass.png in Resources */,
+				6D41064E0344EDAA0E42448271F52F69 /* Compass@2x.png in Resources */,
+				5A6FD4EE65E596A281BD926EEDC464F9 /* Compass@3x.png in Resources */,
+				5EA73AA7C0D5A416761404EFD4D59A23 /* api_mapbox_com-digicert.der in Resources */,
+				B2CBAE1E32DBEAF4A64CAE006A19414B /* api_mapbox_com-geotrust.der in Resources */,
+				5E50DB9FA4A849A4410341D1109C2BB2 /* mapbox.png in Resources */,
+				05B99EE0EB306A7D4615660D5A310176 /* mapbox@2x.png in Resources */,
+				DBE3A7B81346BEC4CA68B6179A3F3FD6 /* mapbox@3x.png in Resources */,
+				B41AC808D2C438A4A49BDA4D17F6E14C /* star_tilestream_net.der in Resources */,
+				4AAF92306B4C94B5AE25DA381572AC18 /* styles in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CBC99801D88E4C1BDDEEBD46AE611D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA082BBD8BFBD66515D2E736EB0494D /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F25A14C760F24485D7572AE9459540D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DDF2B954E1FE458DCEA31C5F72FB8F /* MapboxGL.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00091BEC1DF7CF9EEADB36D99FBE5199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3664EE180DB054DA283B3837BFFCAA8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD940EE3205401B5AF4DFD6DCE5D891 /* MGLDummy.m in Sources */,
+				08F5CF1637A5FD564143FD029C4BF96D /* MapboxGL-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CCF7517E9583D4C3D8D595BEA0D17AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D190BACE6E51A8C09451226C7E5ABDF8 /* GFBase32Utils.m in Sources */,
+				6A77A14E6E5B47A4EDE56A3F6E49DD3E /* GFGeoHash.m in Sources */,
+				B4EAF77E3E14143A961E35FCCCD2CE3C /* GFGeoHashQuery.m in Sources */,
+				787DD1F45E71243F879EB790EB5750F0 /* GFQuery.m in Sources */,
+				002A13874F5C6C61B33340CF5E9D88B7 /* GeoFire-dummy.m in Sources */,
+				5004C6CEC95861D84BD17716DE20A214 /* GeoFire.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B949E7881FA0A4CF469A89D45B491569 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05772089EB75EAF430DAFB8AE3280021 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB5A69C7713C5A791A369018274718C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19191E26F1D2145E6FD99AA30FEF4CED /* SVIndefiniteAnimatedView.m in Sources */,
+				3BFEFCB50E5E2F3C2529BC8745AB6EBD /* SVProgressHUD-dummy.m in Sources */,
+				3CF1CD91E8494095C5208FF2B1EF7296 /* SVProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B0441F091D15880FDF96697DCDEDB68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MapboxGL-MapboxGL";
+			target = F22B42EF0B56ACAD65AB651906EF6055 /* MapboxGL-MapboxGL */;
+			targetProxy = D70A35CFE0D7733E4531E47214E64ADB /* PBXContainerItemProxy */;
+		};
+		640322D54C5F5299E7C67A96FC2C69F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GeoFire;
+			target = 9F559F9D7B583AFC9BD12B5E082C8439 /* GeoFire */;
+			targetProxy = 886D5930D111A63F8F28CAEBEABCF9DA /* PBXContainerItemProxy */;
+		};
+		76CBEE19A60F27C2064B05523FB65666 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MapboxGL;
+			target = D104A0B196B3A9F996A6DA5177B06D9F /* MapboxGL */;
+			targetProxy = 4D5D36625D35107B5D906A41F61B3BDA /* PBXContainerItemProxy */;
+		};
+		C1ADC536DB5D357F6B4B51441AEB51A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 06D74CA90B495A93E00D059B6F66C2AF /* SVProgressHUD */;
+			targetProxy = F2CC28C249B54153C8B9D8BC7534CCFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00F7D154D7D8011041B46D05DB482981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E2A3E05B8478448FFC77D89D54E54E /* GeoFire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GeoFire/GeoFire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GeoFire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GeoFire/GeoFire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GeoFire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0C812A8B084AB655D058D5DC45F0D458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		54A1D9D1E900234160B64638B9DA7B40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031856B1998EB484602AB7B95DC5EC00 /* MapboxGL-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MapboxGL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		58FF65BCF4C1775414BD95904AC9F1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031856B1998EB484602AB7B95DC5EC00 /* MapboxGL-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MapboxGL/MapboxGL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MapboxGL/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MapboxGL/MapboxGL.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MapboxGL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C84345D7EEBBBB2BFF18E13BB3BA6A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D046A4D8E089B090343BBF7422D05C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031856B1998EB484602AB7B95DC5EC00 /* MapboxGL-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MapboxGL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8CEB2C644F2DF4DE61B624ED3019D20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62BC92A7015D9CD725D94DEE6F940215 /* SVProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE863D0787A267FFC4682DAB0E5D0CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E2A3E05B8478448FFC77D89D54E54E /* GeoFire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GeoFire/GeoFire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GeoFire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GeoFire/GeoFire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GeoFire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A64A311E63D5D9F68189F2E78B43A02E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A98E9599CD556554A7B06BCF8F549AE1 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF4DEDE651597320555A1FF1B2CE152A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E265AD30BBD5A46C9C92E63BBF1B4D8 /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E3020A7D3530FA18DC9127D2EB4C81FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62BC92A7015D9CD725D94DEE6F940215 /* SVProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F459A2EDE5673732781DC19252D89DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031856B1998EB484602AB7B95DC5EC00 /* MapboxGL-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MapboxGL/MapboxGL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MapboxGL/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MapboxGL/MapboxGL.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MapboxGL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2729F8A3B2A8F2E7E24C579D36A99F93 /* Build configuration list for PBXNativeTarget "GeoFire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00F7D154D7D8011041B46D05DB482981 /* Debug */,
+				8DE863D0787A267FFC4682DAB0E5D0CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C812A8B084AB655D058D5DC45F0D458 /* Debug */,
+				7C84345D7EEBBBB2BFF18E13BB3BA6A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6847A1E63029B89B4CCC6E3C50945E8A /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A64A311E63D5D9F68189F2E78B43A02E /* Debug */,
+				CF4DEDE651597320555A1FF1B2CE152A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D8FB3ABCB0498503944E055AADCA1A2 /* Build configuration list for PBXNativeTarget "MapboxGL-MapboxGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D046A4D8E089B090343BBF7422D05C1 /* Debug */,
+				54A1D9D1E900234160B64638B9DA7B40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		927B5E9A25944615D25DBD770D0AB9BE /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CEB2C644F2DF4DE61B624ED3019D20C /* Debug */,
+				E3020A7D3530FA18DC9127D2EB4C81FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		998A39BF36CD36C59F1791DC772FDC3E /* Build configuration list for PBXNativeTarget "MapboxGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F459A2EDE5673732781DC19252D89DDB /* Debug */,
+				58FF65BCF4C1775414BD95904AC9F1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A98F1181B6B517900949C0B /* FLYUserMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A98F1171B6B517900949C0B /* FLYUserMetadata.m */; };
+		0A98F1211B6DAE2500949C0B /* FLYFriendsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A98F1201B6DAE2500949C0B /* FLYFriendsTVC.m */; };
+		0A98F1241B6DB1FA00949C0B /* FLYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A98F1231B6DB1FA00949C0B /* FLYUser.m */; };
+		0A98F1361B6DDA1500949C0B /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F1261B6DDA1500949C0B /* ProximaNova-Black.otf */; };
+		0A98F1371B6DDA1500949C0B /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F1271B6DDA1500949C0B /* ProximaNova-Bold.otf */; };
+		0A98F1381B6DDA1500949C0B /* ProximaNova-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F1281B6DDA1500949C0B /* ProximaNova-BoldIt.otf */; };
+		0A98F1391B6DDA1500949C0B /* ProximaNova-Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F1291B6DDA1500949C0B /* ProximaNova-Extrabold.otf */; };
+		0A98F13A1B6DDA1500949C0B /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F12A1B6DDA1500949C0B /* ProximaNova-Light.otf */; };
+		0A98F13B1B6DDA1500949C0B /* ProximaNova-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F12B1B6DDA1500949C0B /* ProximaNova-LightItalic.otf */; };
+		0A98F13C1B6DDA1500949C0B /* ProximaNova-RegItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F12C1B6DDA1500949C0B /* ProximaNova-RegItalic.otf */; };
+		0A98F13D1B6DDA1500949C0B /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F12D1B6DDA1500949C0B /* ProximaNova-Regular.otf */; };
+		0A98F13E1B6DDA1500949C0B /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F12E1B6DDA1500949C0B /* ProximaNova-Semibold.otf */; };
+		0A98F13F1B6DDA1500949C0B /* ProximaNova-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F12F1B6DDA1500949C0B /* ProximaNova-SemiboldItalic.otf */; };
+		0A98F1401B6DDA1500949C0B /* ProximaNovaCond-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F1301B6DDA1500949C0B /* ProximaNovaCond-Light.otf */; };
+		0A98F1411B6DDA1500949C0B /* ProximaNovaCond-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F1311B6DDA1500949C0B /* ProximaNovaCond-LightIt.otf */; };
+		0A98F1421B6DDA1500949C0B /* ProximaNovaCond-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F1321B6DDA1500949C0B /* ProximaNovaCond-Regular.otf */; };
+		0A98F1431B6DDA1500949C0B /* ProximaNovaCond-RegularIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F1331B6DDA1500949C0B /* ProximaNovaCond-RegularIt.otf */; };
+		0A98F1441B6DDA1500949C0B /* ProximaNovaCond-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F1341B6DDA1500949C0B /* ProximaNovaCond-Semibold.otf */; };
+		0A98F1451B6DDA1500949C0B /* ProximaNovaCond-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98F1351B6DDA1500949C0B /* ProximaNovaCond-SemiboldIt.otf */; };
+		0A98F1481B6DE08200949C0B /* FLYFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A98F1471B6DE08200949C0B /* FLYFriendCell.m */; };
+		0A98F1511B6F1D2200949C0B /* MoveLeftCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A98F14E1B6F1D2200949C0B /* MoveLeftCustomSegue.m */; };
+		0A98F1521B6F1D2200949C0B /* MoveRightCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A98F1501B6F1D2200949C0B /* MoveRightCustomSegue.m */; };
+		0A98F1561B70A40100949C0B /* FLYFirebaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A98F1551B70A40100949C0B /* FLYFirebaseService.m */; };
+		0ABDC0821B699D3A0005F984 /* FLYMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABDC0811B699D3A0005F984 /* FLYMapVC.m */; };
+		0ABDC0841B699F770005F984 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABDC0831B699F770005F984 /* MapKit.framework */; };
+		0AD5A1561B637D9500BF1939 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD5A1551B637D9500BF1939 /* main.m */; };
+		0AD5A1591B637D9500BF1939 /* FLYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD5A1581B637D9500BF1939 /* FLYAppDelegate.m */; };
+		0AD5A15C1B637D9500BF1939 /* FLYWelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD5A15B1B637D9500BF1939 /* FLYWelcomeVC.m */; };
+		0AD5A15F1B637D9500BF1939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD5A15D1B637D9500BF1939 /* Main.storyboard */; };
+		0AD5A1611B637D9500BF1939 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD5A1601B637D9500BF1939 /* Images.xcassets */; };
+		0AD5A1641B637D9500BF1939 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD5A1621B637D9500BF1939 /* LaunchScreen.xib */; };
+		0AD5A1701B637D9500BF1939 /* FlyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD5A16F1B637D9500BF1939 /* FlyTests.m */; };
+		0AD5A17B1B640DE200BF1939 /* FLYColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD5A17A1B640DE200BF1939 /* FLYColor.m */; };
+		0AD5A17E1B640F4300BF1939 /* FLYLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD5A17D1B640F4300BF1939 /* FLYLoginVC.m */; };
+		0AD5A1811B640F6100BF1939 /* FLYSignup1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD5A1801B640F6100BF1939 /* FLYSignup1VC.m */; };
+		0AD5A1841B640F6D00BF1939 /* FLYSignup2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD5A1831B640F6D00BF1939 /* FLYSignup2VC.m */; };
+		0AD5A1861B64145700BF1939 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0AD5A1851B64145700BF1939 /* Settings.bundle */; };
+		1A74046F2E358A40AF153437 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713346AFFE3C40292A254A08 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AD5A16A1B637D9500BF1939 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AD5A1481B637D9500BF1939 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AD5A14F1B637D9500BF1939;
+			remoteInfo = Fly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A98F1161B6B517900949C0B /* FLYUserMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYUserMetadata.h; sourceTree = "<group>"; };
+		0A98F1171B6B517900949C0B /* FLYUserMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYUserMetadata.m; sourceTree = "<group>"; };
+		0A98F11F1B6DAE2500949C0B /* FLYFriendsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYFriendsTVC.h; sourceTree = "<group>"; };
+		0A98F1201B6DAE2500949C0B /* FLYFriendsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYFriendsTVC.m; sourceTree = "<group>"; wrapsLines = 0; };
+		0A98F1221B6DB1FA00949C0B /* FLYUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYUser.h; sourceTree = "<group>"; };
+		0A98F1231B6DB1FA00949C0B /* FLYUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYUser.m; sourceTree = "<group>"; };
+		0A98F1261B6DDA1500949C0B /* ProximaNova-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.otf"; sourceTree = "<group>"; };
+		0A98F1271B6DDA1500949C0B /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		0A98F1281B6DDA1500949C0B /* ProximaNova-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-BoldIt.otf"; sourceTree = "<group>"; };
+		0A98F1291B6DDA1500949C0B /* ProximaNova-Extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Extrabold.otf"; sourceTree = "<group>"; };
+		0A98F12A1B6DDA1500949C0B /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
+		0A98F12B1B6DDA1500949C0B /* ProximaNova-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-LightItalic.otf"; sourceTree = "<group>"; };
+		0A98F12C1B6DDA1500949C0B /* ProximaNova-RegItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-RegItalic.otf"; sourceTree = "<group>"; };
+		0A98F12D1B6DDA1500949C0B /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		0A98F12E1B6DDA1500949C0B /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
+		0A98F12F1B6DDA1500949C0B /* ProximaNova-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		0A98F1301B6DDA1500949C0B /* ProximaNovaCond-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Light.otf"; sourceTree = "<group>"; };
+		0A98F1311B6DDA1500949C0B /* ProximaNovaCond-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-LightIt.otf"; sourceTree = "<group>"; };
+		0A98F1321B6DDA1500949C0B /* ProximaNovaCond-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Regular.otf"; sourceTree = "<group>"; };
+		0A98F1331B6DDA1500949C0B /* ProximaNovaCond-RegularIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-RegularIt.otf"; sourceTree = "<group>"; };
+		0A98F1341B6DDA1500949C0B /* ProximaNovaCond-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Semibold.otf"; sourceTree = "<group>"; };
+		0A98F1351B6DDA1500949C0B /* ProximaNovaCond-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-SemiboldIt.otf"; sourceTree = "<group>"; };
+		0A98F1461B6DE08200949C0B /* FLYFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYFriendCell.h; sourceTree = "<group>"; };
+		0A98F1471B6DE08200949C0B /* FLYFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYFriendCell.m; sourceTree = "<group>"; };
+		0A98F14D1B6F1D2200949C0B /* MoveLeftCustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveLeftCustomSegue.h; sourceTree = "<group>"; };
+		0A98F14E1B6F1D2200949C0B /* MoveLeftCustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveLeftCustomSegue.m; sourceTree = "<group>"; };
+		0A98F14F1B6F1D2200949C0B /* MoveRightCustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveRightCustomSegue.h; sourceTree = "<group>"; };
+		0A98F1501B6F1D2200949C0B /* MoveRightCustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveRightCustomSegue.m; sourceTree = "<group>"; };
+		0A98F1541B70A40100949C0B /* FLYFirebaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYFirebaseService.h; sourceTree = "<group>"; };
+		0A98F1551B70A40100949C0B /* FLYFirebaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYFirebaseService.m; sourceTree = "<group>"; };
+		0ABDC0801B699D3A0005F984 /* FLYMapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYMapVC.h; sourceTree = "<group>"; };
+		0ABDC0811B699D3A0005F984 /* FLYMapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYMapVC.m; sourceTree = "<group>"; };
+		0ABDC0831B699F770005F984 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0ABDC0851B69BBB60005F984 /* GeoFire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GeoFire.framework; path = "Pods/../build/Debug-iphoneos/GeoFire.framework"; sourceTree = "<group>"; };
+		0AD5A1501B637D9500BF1939 /* Fly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD5A1541B637D9500BF1939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AD5A1551B637D9500BF1939 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AD5A1571B637D9500BF1939 /* FLYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYAppDelegate.h; sourceTree = "<group>"; };
+		0AD5A1581B637D9500BF1939 /* FLYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYAppDelegate.m; sourceTree = "<group>"; };
+		0AD5A15A1B637D9500BF1939 /* FLYWelcomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLYWelcomeVC.h; sourceTree = "<group>"; };
+		0AD5A15B1B637D9500BF1939 /* FLYWelcomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLYWelcomeVC.m; sourceTree = "<group>"; };
+		0AD5A15E1B637D9500BF1939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AD5A1601B637D9500BF1939 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0AD5A1631B637D9500BF1939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0AD5A1691B637D9500BF1939 /* FlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD5A16E1B637D9500BF1939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AD5A16F1B637D9500BF1939 /* FlyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyTests.m; sourceTree = "<group>"; };
+		0AD5A1791B640DE200BF1939 /* FLYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYColor.h; sourceTree = "<group>"; };
+		0AD5A17A1B640DE200BF1939 /* FLYColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYColor.m; sourceTree = "<group>"; };
+		0AD5A17C1B640F4300BF1939 /* FLYLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYLoginVC.h; sourceTree = "<group>"; };
+		0AD5A17D1B640F4300BF1939 /* FLYLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYLoginVC.m; sourceTree = "<group>"; };
+		0AD5A17F1B640F6100BF1939 /* FLYSignup1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYSignup1VC.h; sourceTree = "<group>"; };
+		0AD5A1801B640F6100BF1939 /* FLYSignup1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYSignup1VC.m; sourceTree = "<group>"; };
+		0AD5A1821B640F6D00BF1939 /* FLYSignup2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYSignup2VC.h; sourceTree = "<group>"; };
+		0AD5A1831B640F6D00BF1939 /* FLYSignup2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYSignup2VC.m; sourceTree = "<group>"; };
+		0AD5A1851B64145700BF1939 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		713346AFFE3C40292A254A08 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EBB7314262B1904620E1C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C55660BAD853BB00A56558A9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AD5A14D1B637D9500BF1939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ABDC0841B699F770005F984 /* MapKit.framework in Frameworks */,
+				1A74046F2E358A40AF153437 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AD5A1661B637D9500BF1939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A98F1251B6DDA1500949C0B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0A98F1261B6DDA1500949C0B /* ProximaNova-Black.otf */,
+				0A98F1271B6DDA1500949C0B /* ProximaNova-Bold.otf */,
+				0A98F1281B6DDA1500949C0B /* ProximaNova-BoldIt.otf */,
+				0A98F1291B6DDA1500949C0B /* ProximaNova-Extrabold.otf */,
+				0A98F12A1B6DDA1500949C0B /* ProximaNova-Light.otf */,
+				0A98F12B1B6DDA1500949C0B /* ProximaNova-LightItalic.otf */,
+				0A98F12C1B6DDA1500949C0B /* ProximaNova-RegItalic.otf */,
+				0A98F12D1B6DDA1500949C0B /* ProximaNova-Regular.otf */,
+				0A98F12E1B6DDA1500949C0B /* ProximaNova-Semibold.otf */,
+				0A98F12F1B6DDA1500949C0B /* ProximaNova-SemiboldItalic.otf */,
+				0A98F1301B6DDA1500949C0B /* ProximaNovaCond-Light.otf */,
+				0A98F1311B6DDA1500949C0B /* ProximaNovaCond-LightIt.otf */,
+				0A98F1321B6DDA1500949C0B /* ProximaNovaCond-Regular.otf */,
+				0A98F1331B6DDA1500949C0B /* ProximaNovaCond-RegularIt.otf */,
+				0A98F1341B6DDA1500949C0B /* ProximaNovaCond-Semibold.otf */,
+				0A98F1351B6DDA1500949C0B /* ProximaNovaCond-SemiboldIt.otf */,
+			);
+			name = Fonts;
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		0A98F1491B6E161A00949C0B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AD5A15A1B637D9500BF1939 /* FLYWelcomeVC.h */,
+				0AD5A15B1B637D9500BF1939 /* FLYWelcomeVC.m */,
+				0AD5A17C1B640F4300BF1939 /* FLYLoginVC.h */,
+				0AD5A17D1B640F4300BF1939 /* FLYLoginVC.m */,
+				0AD5A17F1B640F6100BF1939 /* FLYSignup1VC.h */,
+				0AD5A1801B640F6100BF1939 /* FLYSignup1VC.m */,
+				0AD5A1821B640F6D00BF1939 /* FLYSignup2VC.h */,
+				0AD5A1831B640F6D00BF1939 /* FLYSignup2VC.m */,
+				0ABDC0801B699D3A0005F984 /* FLYMapVC.h */,
+				0ABDC0811B699D3A0005F984 /* FLYMapVC.m */,
+				0A98F11F1B6DAE2500949C0B /* FLYFriendsTVC.h */,
+				0A98F1201B6DAE2500949C0B /* FLYFriendsTVC.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0A98F14A1B6E162C00949C0B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0AD5A1791B640DE200BF1939 /* FLYColor.h */,
+				0AD5A17A1B640DE200BF1939 /* FLYColor.m */,
+				0A98F1161B6B517900949C0B /* FLYUserMetadata.h */,
+				0A98F1171B6B517900949C0B /* FLYUserMetadata.m */,
+				0A98F1221B6DB1FA00949C0B /* FLYUser.h */,
+				0A98F1231B6DB1FA00949C0B /* FLYUser.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		0A98F14B1B6F1D0900949C0B /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0A98F1461B6DE08200949C0B /* FLYFriendCell.h */,
+				0A98F1471B6DE08200949C0B /* FLYFriendCell.m */,
+			);
+			name = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		0A98F14C1B6F1D2100949C0B /* Custom Segues */ = {
+			isa = PBXGroup;
+			children = (
+				0A98F14D1B6F1D2200949C0B /* MoveLeftCustomSegue.h */,
+				0A98F14E1B6F1D2200949C0B /* MoveLeftCustomSegue.m */,
+				0A98F14F1B6F1D2200949C0B /* MoveRightCustomSegue.h */,
+				0A98F1501B6F1D2200949C0B /* MoveRightCustomSegue.m */,
+			);
+			path = "Custom Segues";
+			sourceTree = "<group>";
+		};
+		0A98F1531B707AB900949C0B /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				0A98F14B1B6F1D0900949C0B /* Custom Cells */,
+				0A98F14C1B6F1D2100949C0B /* Custom Segues */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		0AD5A1471B637D9500BF1939 = {
+			isa = PBXGroup;
+			children = (
+				0AD5A1521B637D9500BF1939 /* Fly */,
+				0AD5A16C1B637D9500BF1939 /* FlyTests */,
+				0AD5A1511B637D9500BF1939 /* Products */,
+				15DF01D9C27C29DB2ABF473F /* Pods */,
+				99407CD75FA85F161B54899C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0AD5A1511B637D9500BF1939 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AD5A1501B637D9500BF1939 /* Fly.app */,
+				0AD5A1691B637D9500BF1939 /* FlyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AD5A1521B637D9500BF1939 /* Fly */ = {
+			isa = PBXGroup;
+			children = (
+				0AD5A1571B637D9500BF1939 /* FLYAppDelegate.h */,
+				0AD5A1581B637D9500BF1939 /* FLYAppDelegate.m */,
+				0A98F1541B70A40100949C0B /* FLYFirebaseService.h */,
+				0A98F1551B70A40100949C0B /* FLYFirebaseService.m */,
+				0AD5A15D1B637D9500BF1939 /* Main.storyboard */,
+				0A98F1491B6E161A00949C0B /* View Controllers */,
+				0A98F14A1B6E162C00949C0B /* Classes */,
+				0A98F1531B707AB900949C0B /* Custom */,
+				0A98F1251B6DDA1500949C0B /* Fonts */,
+				0AD5A1601B637D9500BF1939 /* Images.xcassets */,
+				0AD5A1621B637D9500BF1939 /* LaunchScreen.xib */,
+				0AD5A1851B64145700BF1939 /* Settings.bundle */,
+				0AD5A1531B637D9500BF1939 /* Supporting Files */,
+			);
+			path = Fly;
+			sourceTree = "<group>";
+		};
+		0AD5A1531B637D9500BF1939 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AD5A1541B637D9500BF1939 /* Info.plist */,
+				0AD5A1551B637D9500BF1939 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AD5A16C1B637D9500BF1939 /* FlyTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AD5A16F1B637D9500BF1939 /* FlyTests.m */,
+				0AD5A16D1B637D9500BF1939 /* Supporting Files */,
+			);
+			path = FlyTests;
+			sourceTree = "<group>";
+		};
+		0AD5A16D1B637D9500BF1939 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AD5A16E1B637D9500BF1939 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15DF01D9C27C29DB2ABF473F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94EBB7314262B1904620E1C9 /* Pods.debug.xcconfig */,
+				C55660BAD853BB00A56558A9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		99407CD75FA85F161B54899C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0ABDC0851B69BBB60005F984 /* GeoFire.framework */,
+				0ABDC0831B699F770005F984 /* MapKit.framework */,
+				713346AFFE3C40292A254A08 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AD5A14F1B637D9500BF1939 /* Fly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AD5A1731B637D9500BF1939 /* Build configuration list for PBXNativeTarget "Fly" */;
+			buildPhases = (
+				0A465E821B5BE8ADE97E1D57 /* Check Pods Manifest.lock */,
+				0AD5A14C1B637D9500BF1939 /* Sources */,
+				0AD5A14D1B637D9500BF1939 /* Frameworks */,
+				0AD5A14E1B637D9500BF1939 /* Resources */,
+				7901C14109D38D1D18AF2103 /* Embed Pods Frameworks */,
+				D322C9E63CE4473FEC19293F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fly;
+			productName = Fly;
+			productReference = 0AD5A1501B637D9500BF1939 /* Fly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0AD5A1681B637D9500BF1939 /* FlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AD5A1761B637D9500BF1939 /* Build configuration list for PBXNativeTarget "FlyTests" */;
+			buildPhases = (
+				0AD5A1651B637D9500BF1939 /* Sources */,
+				0AD5A1661B637D9500BF1939 /* Frameworks */,
+				0AD5A1671B637D9500BF1939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AD5A16B1B637D9500BF1939 /* PBXTargetDependency */,
+			);
+			name = FlyTests;
+			productName = FlyTests;
+			productReference = 0AD5A1691B637D9500BF1939 /* FlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AD5A1481B637D9500BF1939 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Fly;
+				TargetAttributes = {
+					0AD5A14F1B637D9500BF1939 = {
+						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					0AD5A1681B637D9500BF1939 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 0AD5A14F1B637D9500BF1939;
+					};
+				};
+			};
+			buildConfigurationList = 0AD5A14B1B637D9500BF1939 /* Build configuration list for PBXProject "Fly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0AD5A1471B637D9500BF1939;
+			productRefGroup = 0AD5A1511B637D9500BF1939 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AD5A14F1B637D9500BF1939 /* Fly */,
+				0AD5A1681B637D9500BF1939 /* FlyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AD5A14E1B637D9500BF1939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD5A1861B64145700BF1939 /* Settings.bundle in Resources */,
+				0A98F1361B6DDA1500949C0B /* ProximaNova-Black.otf in Resources */,
+				0A98F1421B6DDA1500949C0B /* ProximaNovaCond-Regular.otf in Resources */,
+				0A98F1401B6DDA1500949C0B /* ProximaNovaCond-Light.otf in Resources */,
+				0AD5A15F1B637D9500BF1939 /* Main.storyboard in Resources */,
+				0A98F1371B6DDA1500949C0B /* ProximaNova-Bold.otf in Resources */,
+				0A98F1451B6DDA1500949C0B /* ProximaNovaCond-SemiboldIt.otf in Resources */,
+				0A98F1431B6DDA1500949C0B /* ProximaNovaCond-RegularIt.otf in Resources */,
+				0A98F13E1B6DDA1500949C0B /* ProximaNova-Semibold.otf in Resources */,
+				0A98F1381B6DDA1500949C0B /* ProximaNova-BoldIt.otf in Resources */,
+				0A98F13D1B6DDA1500949C0B /* ProximaNova-Regular.otf in Resources */,
+				0A98F13F1B6DDA1500949C0B /* ProximaNova-SemiboldItalic.otf in Resources */,
+				0A98F1441B6DDA1500949C0B /* ProximaNovaCond-Semibold.otf in Resources */,
+				0A98F13A1B6DDA1500949C0B /* ProximaNova-Light.otf in Resources */,
+				0AD5A1641B637D9500BF1939 /* LaunchScreen.xib in Resources */,
+				0A98F1391B6DDA1500949C0B /* ProximaNova-Extrabold.otf in Resources */,
+				0A98F1411B6DDA1500949C0B /* ProximaNovaCond-LightIt.otf in Resources */,
+				0AD5A1611B637D9500BF1939 /* Images.xcassets in Resources */,
+				0A98F13B1B6DDA1500949C0B /* ProximaNova-LightItalic.otf in Resources */,
+				0A98F13C1B6DDA1500949C0B /* ProximaNova-RegItalic.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AD5A1671B637D9500BF1939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A465E821B5BE8ADE97E1D57 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7901C14109D38D1D18AF2103 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D322C9E63CE4473FEC19293F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AD5A14C1B637D9500BF1939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A98F1511B6F1D2200949C0B /* MoveLeftCustomSegue.m in Sources */,
+				0AD5A1811B640F6100BF1939 /* FLYSignup1VC.m in Sources */,
+				0A98F1241B6DB1FA00949C0B /* FLYUser.m in Sources */,
+				0AD5A15C1B637D9500BF1939 /* FLYWelcomeVC.m in Sources */,
+				0AD5A1841B640F6D00BF1939 /* FLYSignup2VC.m in Sources */,
+				0A98F1561B70A40100949C0B /* FLYFirebaseService.m in Sources */,
+				0AD5A17E1B640F4300BF1939 /* FLYLoginVC.m in Sources */,
+				0AD5A1591B637D9500BF1939 /* FLYAppDelegate.m in Sources */,
+				0AD5A1561B637D9500BF1939 /* main.m in Sources */,
+				0A98F1521B6F1D2200949C0B /* MoveRightCustomSegue.m in Sources */,
+				0AD5A17B1B640DE200BF1939 /* FLYColor.m in Sources */,
+				0A98F1211B6DAE2500949C0B /* FLYFriendsTVC.m in Sources */,
+				0A98F1481B6DE08200949C0B /* FLYFriendCell.m in Sources */,
+				0A98F1181B6B517900949C0B /* FLYUserMetadata.m in Sources */,
+				0ABDC0821B699D3A0005F984 /* FLYMapVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AD5A1651B637D9500BF1939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD5A1701B637D9500BF1939 /* FlyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AD5A16B1B637D9500BF1939 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AD5A14F1B637D9500BF1939 /* Fly */;
+			targetProxy = 0AD5A16A1B637D9500BF1939 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0AD5A15D1B637D9500BF1939 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AD5A15E1B637D9500BF1939 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0AD5A1621B637D9500BF1939 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AD5A1631B637D9500BF1939 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AD5A1711B637D9500BF1939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0AD5A1721B637D9500BF1939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AD5A1741B637D9500BF1939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94EBB7314262B1904620E1C9 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = Fly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0AD5A1751B637D9500BF1939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C55660BAD853BB00A56558A9 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = Fly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0AD5A1771B637D9500BF1939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FlyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fly.app/Fly";
+			};
+			name = Debug;
+		};
+		0AD5A1781B637D9500BF1939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FlyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fly.app/Fly";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AD5A14B1B637D9500BF1939 /* Build configuration list for PBXProject "Fly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AD5A1711B637D9500BF1939 /* Debug */,
+				0AD5A1721B637D9500BF1939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AD5A1731B637D9500BF1939 /* Build configuration list for PBXNativeTarget "Fly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AD5A1741B637D9500BF1939 /* Debug */,
+				0AD5A1751B637D9500BF1939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AD5A1761B637D9500BF1939 /* Build configuration list for PBXNativeTarget "FlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AD5A1771B637D9500BF1939 /* Debug */,
+				0AD5A1781B637D9500BF1939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AD5A1481B637D9500BF1939 /* Project object */;
+}
