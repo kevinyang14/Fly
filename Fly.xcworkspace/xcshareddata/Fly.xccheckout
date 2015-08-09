@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>18362F49-A964-4301-BB0F-EE094E06C792</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Fly</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EB23123216B7F5B73EB33D0FBEB160699DE0BE4E</key>
+		<string>https://github.com/kevinyang14/Fly.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Fly.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EB23123216B7F5B73EB33D0FBEB160699DE0BE4E</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kevinyang14/Fly.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EB23123216B7F5B73EB33D0FBEB160699DE0BE4E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EB23123216B7F5B73EB33D0FBEB160699DE0BE4E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Fly</string>
+		</dict>
+	</array>
+</dict>
+</plist>
