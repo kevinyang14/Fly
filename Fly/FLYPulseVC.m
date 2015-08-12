@@ -77,6 +77,7 @@
         NSNumber *longitude = [NSNumber numberWithDouble:self.locationManager.location.coordinate.longitude];
         NSDictionary *newPulse = @{
                                    @"sender":[FLYAppDelegate userUID],
+                                   @"senderName": @"Leonardo Da Vinci",
                                    @"emojis":emoji,
                                    @"lat": latitude,
                                    @"long": longitude,
