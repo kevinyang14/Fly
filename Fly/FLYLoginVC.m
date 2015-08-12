@@ -86,7 +86,7 @@
     } else {
         NSLog(@"login successful");
         [self createFriendshipBranch];
-        [SVProgressHUD dismiss];
+        [SVProgressHUD showSuccessWithStatus:@"Logged in 😇"];
         [self performSegueWithIdentifier:@"loginToMap" sender:self];
     }
     }];

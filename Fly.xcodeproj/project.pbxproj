@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A79F1F31B77FAF1007F4DF6 /* FLYPulseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A79F1F21B77FAF1007F4DF6 /* FLYPulseVC.m */; };
 		0A98F1181B6B517900949C0B /* FLYUserMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A98F1171B6B517900949C0B /* FLYUserMetadata.m */; };
 		0A98F1211B6DAE2500949C0B /* FLYFriendsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A98F1201B6DAE2500949C0B /* FLYFriendsTVC.m */; };
 		0A98F1241B6DB1FA00949C0B /* FLYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A98F1231B6DB1FA00949C0B /* FLYUser.m */; };
@@ -44,6 +45,9 @@
 		0AD5A1811B640F6100BF1939 /* FLYSignup1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD5A1801B640F6100BF1939 /* FLYSignup1VC.m */; };
 		0AD5A1841B640F6D00BF1939 /* FLYSignup2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD5A1831B640F6D00BF1939 /* FLYSignup2VC.m */; };
 		0AD5A1861B64145700BF1939 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0AD5A1851B64145700BF1939 /* Settings.bundle */; };
+		0AF100371B7849A2004E6FF0 /* FLYPulseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF100361B7849A2004E6FF0 /* FLYPulseCell.m */; };
+		0AF1003A1B79C53C004E6FF0 /* FLYPulseImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF100391B79C53C004E6FF0 /* FLYPulseImageUtils.m */; };
+		0AF1003D1B79C861004E6FF0 /* FLYPulseMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1003C1B79C861004E6FF0 /* FLYPulseMetadata.m */; };
 		1A74046F2E358A40AF153437 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713346AFFE3C40292A254A08 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -58,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A79F1F11B77FAF1007F4DF6 /* FLYPulseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYPulseVC.h; sourceTree = "<group>"; };
+		0A79F1F21B77FAF1007F4DF6 /* FLYPulseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYPulseVC.m; sourceTree = "<group>"; };
 		0A98F1161B6B517900949C0B /* FLYUserMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYUserMetadata.h; sourceTree = "<group>"; };
 		0A98F1171B6B517900949C0B /* FLYUserMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYUserMetadata.m; sourceTree = "<group>"; };
 		0A98F11F1B6DAE2500949C0B /* FLYFriendsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYFriendsTVC.h; sourceTree = "<group>"; };
@@ -114,6 +120,12 @@
 		0AD5A1821B640F6D00BF1939 /* FLYSignup2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYSignup2VC.h; sourceTree = "<group>"; };
 		0AD5A1831B640F6D00BF1939 /* FLYSignup2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYSignup2VC.m; sourceTree = "<group>"; };
 		0AD5A1851B64145700BF1939 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		0AF100351B7849A2004E6FF0 /* FLYPulseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYPulseCell.h; sourceTree = "<group>"; };
+		0AF100361B7849A2004E6FF0 /* FLYPulseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYPulseCell.m; sourceTree = "<group>"; };
+		0AF100381B79C53C004E6FF0 /* FLYPulseImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYPulseImageUtils.h; sourceTree = "<group>"; };
+		0AF100391B79C53C004E6FF0 /* FLYPulseImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYPulseImageUtils.m; sourceTree = "<group>"; };
+		0AF1003B1B79C861004E6FF0 /* FLYPulseMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYPulseMetadata.h; sourceTree = "<group>"; };
+		0AF1003C1B79C861004E6FF0 /* FLYPulseMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYPulseMetadata.m; sourceTree = "<group>"; };
 		713346AFFE3C40292A254A08 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EBB7314262B1904620E1C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C55660BAD853BB00A56558A9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +190,8 @@
 				0ABDC0811B699D3A0005F984 /* FLYMapVC.m */,
 				0A98F11F1B6DAE2500949C0B /* FLYFriendsTVC.h */,
 				0A98F1201B6DAE2500949C0B /* FLYFriendsTVC.m */,
+				0A79F1F11B77FAF1007F4DF6 /* FLYPulseVC.h */,
+				0A79F1F21B77FAF1007F4DF6 /* FLYPulseVC.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -187,10 +201,14 @@
 			children = (
 				0AD5A1791B640DE200BF1939 /* FLYColor.h */,
 				0AD5A17A1B640DE200BF1939 /* FLYColor.m */,
-				0A98F1161B6B517900949C0B /* FLYUserMetadata.h */,
-				0A98F1171B6B517900949C0B /* FLYUserMetadata.m */,
 				0A98F1221B6DB1FA00949C0B /* FLYUser.h */,
 				0A98F1231B6DB1FA00949C0B /* FLYUser.m */,
+				0A98F1161B6B517900949C0B /* FLYUserMetadata.h */,
+				0A98F1171B6B517900949C0B /* FLYUserMetadata.m */,
+				0AF1003B1B79C861004E6FF0 /* FLYPulseMetadata.h */,
+				0AF1003C1B79C861004E6FF0 /* FLYPulseMetadata.m */,
+				0AF100381B79C53C004E6FF0 /* FLYPulseImageUtils.h */,
+				0AF100391B79C53C004E6FF0 /* FLYPulseImageUtils.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -200,6 +218,8 @@
 			children = (
 				0A98F1461B6DE08200949C0B /* FLYFriendCell.h */,
 				0A98F1471B6DE08200949C0B /* FLYFriendCell.m */,
+				0AF100351B7849A2004E6FF0 /* FLYPulseCell.h */,
+				0AF100361B7849A2004E6FF0 /* FLYPulseCell.m */,
 			);
 			name = "Custom Cells";
 			sourceTree = "<group>";
@@ -483,15 +503,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A98F1511B6F1D2200949C0B /* MoveLeftCustomSegue.m in Sources */,
+				0AF1003A1B79C53C004E6FF0 /* FLYPulseImageUtils.m in Sources */,
 				0AD5A1811B640F6100BF1939 /* FLYSignup1VC.m in Sources */,
 				0A98F1241B6DB1FA00949C0B /* FLYUser.m in Sources */,
 				0AD5A15C1B637D9500BF1939 /* FLYWelcomeVC.m in Sources */,
+				0A79F1F31B77FAF1007F4DF6 /* FLYPulseVC.m in Sources */,
 				0AD5A1841B640F6D00BF1939 /* FLYSignup2VC.m in Sources */,
 				0A98F1561B70A40100949C0B /* FLYFirebaseService.m in Sources */,
 				0AD5A17E1B640F4300BF1939 /* FLYLoginVC.m in Sources */,
 				0AD5A1591B637D9500BF1939 /* FLYAppDelegate.m in Sources */,
+				0AF100371B7849A2004E6FF0 /* FLYPulseCell.m in Sources */,
 				0AD5A1561B637D9500BF1939 /* main.m in Sources */,
 				0A98F1521B6F1D2200949C0B /* MoveRightCustomSegue.m in Sources */,
+				0AF1003D1B79C861004E6FF0 /* FLYPulseMetadata.m in Sources */,
 				0AD5A17B1B640DE200BF1939 /* FLYColor.m in Sources */,
 				0A98F1211B6DAE2500949C0B /* FLYFriendsTVC.m in Sources */,
 				0A98F1481B6DE08200949C0B /* FLYFriendCell.m in Sources */,

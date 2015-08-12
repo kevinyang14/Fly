@@ -210,17 +210,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="c0m-E1-oc8">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="432"/>
                                 <color key="tintColor" red="0.1019607843" green="0.72549019609999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="FSf-9n-U0k" id="dio-zo-8sw"/>
                                 </connections>
                             </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="foL-7A-OcG">
+                                <rect key="frame" x="0.0" y="432" width="414" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="60" id="s3u-Jc-EBM" customClass="FLYPulseCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s3u-Jc-EBM" id="1hN-px-dEP">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🚚🍣🍤" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySg-32-5y8">
+                                                    <rect key="frame" x="19" y="0.0" width="116" height="59.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orb1" translatesAutoresizingMaskIntoConstraints="NO" id="aD6-ct-ua6">
+                                                    <rect key="frame" x="366" y="15" width="30" height="30"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kevin Yang" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wi6-56-P8H">
+                                                    <rect key="frame" x="143" y="0.5" width="200" height="59.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="highlightedColor" red="0.99714285714285711" green="0.99428571428571433" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="emojiLabel" destination="ySg-32-5y8" id="IzQ-GC-iIy"/>
+                                            <outlet property="senderLabel" destination="wi6-56-P8H" id="Xmr-QQ-QID"/>
+                                            <outlet property="timeBomb" destination="aD6-ct-ua6" id="gB5-oG-K4Y"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="FSf-9n-U0k" id="0Tx-wT-RzJ"/>
+                                    <outlet property="delegate" destination="FSf-9n-U0k" id="asU-as-bBz"/>
+                                </connections>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dH-pP-lHg">
-                                <rect key="frame" x="348" y="614" width="66" height="58"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="365" y="377" width="38" height="38"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="home">
+                                <state key="normal" backgroundImage="home">
                                     <color key="titleColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -228,6 +267,10 @@
                                     <action selector="home:" destination="FSf-9n-U0k" eventType="touchUpInside" id="ycz-wW-RbA"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UKJ-A3-u0d">
+                                <rect key="frame" x="0.0" y="428" width="414" height="4"/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.72549019609999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -235,7 +278,7 @@
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" id="Hpf-vE-1bn">
                             <connections>
-                                <segue destination="FZ6-Oi-OJf" kind="custom" customClass="MoveLeftCustomSegue" id="XKV-Fm-6mq"/>
+                                <segue destination="FZ6-Oi-OJf" kind="modal" id="XKV-Fm-6mq"/>
                             </connections>
                         </barButtonItem>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SBp-fR-aA4">
@@ -246,18 +289,75 @@
                             </state>
                             <state key="highlighted" image="haloLogoHighlighted"/>
                         </button>
-                        <barButtonItem key="rightBarButtonItem" id="slL-0A-zWi"/>
+                        <barButtonItem key="rightBarButtonItem" id="slL-0A-zWi">
+                            <connections>
+                                <segue destination="buZ-wI-b7l" kind="modal" identifier="pulseSegue" id="Jfs-nb-kXz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="mapView" destination="c0m-E1-oc8" id="Agp-rI-I9x"/>
                         <outlet property="peopleBarButton" destination="Hpf-vE-1bn" id="cy3-Zg-2hz"/>
                         <outlet property="pulseBarButton" destination="slL-0A-zWi" id="c4Z-V3-PsE"/>
+                        <outlet property="tableView" destination="foL-7A-OcG" id="1Hk-PD-hDJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFn-Us-1XF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1697" y="213"/>
+        </scene>
+        <!--PulseVC-->
+        <scene sceneID="VHh-Zd-Bi5">
+            <objects>
+                <viewController id="buZ-wI-b7l" customClass="FLYPulseVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4hc-p0-cL4"/>
+                        <viewControllerLayoutGuide type="bottom" id="O7N-2u-p3C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mG0-KW-5n7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gt9-3W-aDA">
+                                <rect key="frame" x="15" y="25" width="34" height="34"/>
+                                <state key="normal" image="map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="segueToMap:" destination="buZ-wI-b7l" eventType="touchUpInside" id="RGe-uv-DbH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56t-B6-81R">
+                                <rect key="frame" x="69" y="398" width="276" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="21"/>
+                                <state key="normal" title="Send" backgroundImage="login_button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendPulse:" destination="buZ-wI-b7l" eventType="touchUpInside" id="8Yb-jP-p13"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Speak using emojis 😎" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Lr-50-1Rw">
+                                <rect key="frame" x="36" y="110" width="343" height="186"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="buZ-wI-b7l" id="riB-sK-WPg"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="emojiTextField" destination="3Lr-50-1Rw" id="zhP-db-fGt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hjU-Pp-QOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2355" y="213"/>
         </scene>
         <!--Add People-->
         <scene sceneID="8hb-OT-HVw">
@@ -339,7 +439,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sc0-tr-XHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2229" y="-674"/>
+            <point key="canvasLocation" x="2799" y="-716"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="L8R-OA-sYO">
@@ -444,7 +544,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZES-XG-I9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697" y="-674"/>
+            <point key="canvasLocation" x="2223" y="-716"/>
         </scene>
     </scenes>
     <resources>
@@ -454,8 +554,10 @@
         <image name="fly_logo" width="267" height="165"/>
         <image name="haloLogo" width="49" height="30"/>
         <image name="haloLogoHighlighted" width="49" height="30"/>
+        <image name="home" width="38" height="38"/>
         <image name="login_button" width="276" height="42"/>
         <image name="map" width="34" height="34"/>
+        <image name="orb1" width="30" height="30"/>
         <image name="signup_button" width="324" height="67"/>
         <image name="stranger" width="28" height="29"/>
     </resources>
@@ -465,7 +567,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="eed-PU-wJB"/>
+        <segue reference="LYj-pQ-L2b"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.1019607843" green="0.72549019609999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
