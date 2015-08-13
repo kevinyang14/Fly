@@ -48,6 +48,7 @@
 		0AF100371B7849A2004E6FF0 /* FLYPulseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF100361B7849A2004E6FF0 /* FLYPulseCell.m */; };
 		0AF1003A1B79C53C004E6FF0 /* FLYPulseImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF100391B79C53C004E6FF0 /* FLYPulseImageUtils.m */; };
 		0AF1003D1B79C861004E6FF0 /* FLYPulseMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1003C1B79C861004E6FF0 /* FLYPulseMetadata.m */; };
+		0AF100421B7C0261004E6FF0 /* FLYAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF100411B7C0261004E6FF0 /* FLYAnimation.m */; };
 		1A74046F2E358A40AF153437 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713346AFFE3C40292A254A08 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -126,6 +127,8 @@
 		0AF100391B79C53C004E6FF0 /* FLYPulseImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYPulseImageUtils.m; sourceTree = "<group>"; };
 		0AF1003B1B79C861004E6FF0 /* FLYPulseMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYPulseMetadata.h; sourceTree = "<group>"; };
 		0AF1003C1B79C861004E6FF0 /* FLYPulseMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYPulseMetadata.m; sourceTree = "<group>"; };
+		0AF100401B7C0261004E6FF0 /* FLYAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYAnimation.h; sourceTree = "<group>"; };
+		0AF100411B7C0261004E6FF0 /* FLYAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYAnimation.m; sourceTree = "<group>"; };
 		713346AFFE3C40292A254A08 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EBB7314262B1904620E1C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C55660BAD853BB00A56558A9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -199,6 +202,8 @@
 		0A98F14A1B6E162C00949C0B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0AF100401B7C0261004E6FF0 /* FLYAnimation.h */,
+				0AF100411B7C0261004E6FF0 /* FLYAnimation.m */,
 				0AD5A1791B640DE200BF1939 /* FLYColor.h */,
 				0AD5A17A1B640DE200BF1939 /* FLYColor.m */,
 				0A98F1221B6DB1FA00949C0B /* FLYUser.h */,
@@ -506,6 +511,7 @@
 				0AF1003A1B79C53C004E6FF0 /* FLYPulseImageUtils.m in Sources */,
 				0AD5A1811B640F6100BF1939 /* FLYSignup1VC.m in Sources */,
 				0A98F1241B6DB1FA00949C0B /* FLYUser.m in Sources */,
+				0AF100421B7C0261004E6FF0 /* FLYAnimation.m in Sources */,
 				0AD5A15C1B637D9500BF1939 /* FLYWelcomeVC.m in Sources */,
 				0A79F1F31B77FAF1007F4DF6 /* FLYPulseVC.m in Sources */,
 				0AD5A1841B640F6D00BF1939 /* FLYSignup2VC.m in Sources */,

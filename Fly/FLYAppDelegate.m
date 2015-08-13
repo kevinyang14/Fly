@@ -8,17 +8,20 @@
 
 #import "FLYAppDelegate.h"
 #import "FLYColor.h"
+#import "FLYWelcomeVC.h"
+#import "FLYMapVC.h"
+
 
 static NSString * const kFirebaseURL = @"https://flyapp.firebaseio.com";
-
 @interface FLYAppDelegate ()
 @end
 
 @implementation FLYAppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setupUI];
+    NSLog(@"after set up UI");
+    [self toggleLogin];
     return YES;
 }
 
@@ -29,6 +32,24 @@ static NSString * const kFirebaseURL = @"https://flyapp.firebaseio.com";
     }
 }
 
+- (void)toggleLogin{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                             bundle: nil];
+    Firebase *flyRef = [FLYAppDelegate flyRef];
+
+    if (flyRef.authData) {
+        NSLog(@"LOGGED IN");
+        FLYMapVC *mapView = (FLYMapVC *)[mainStoryboard instantiateViewControllerWithIdentifier:@"FLYMapVC"];
+        self.window.rootViewController = mapView;
+    } else {
+        NSLog(@"NOT LOGGED IN");
+        FLYWelcomeVC *welcomeView = (FLYWelcomeVC *)[mainStoryboard instantiateViewControllerWithIdentifier:@"FLYWelcomeVC"];
+        self.window.rootViewController = welcomeView;
+    }
+}
+
+#pragma mark Firebase methods
+
 +(Firebase *)flyRef{
     return [[Firebase alloc] initWithUrl:kFirebaseURL];
 }
@@ -36,6 +57,8 @@ static NSString * const kFirebaseURL = @"https://flyapp.firebaseio.com";
 +(NSString *)userUID{
     return [FLYAppDelegate flyRef].authData.uid;
 }
+
+#pragma mark Helper methods
 
 +(void)alertWithTitle:(NSString *)title andMessage:(NSString *)msg
 {

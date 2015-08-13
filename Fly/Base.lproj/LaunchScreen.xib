@@ -11,17 +11,17 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fly_logo" translatesAutoresizingMaskIntoConstraints="NO" id="aF4-dK-JR4">
-                    <rect key="frame" x="136" y="121" width="208" height="129"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fly_logo" translatesAutoresizingMaskIntoConstraints="NO" id="aF4-dK-JR4">
+                    <rect key="frame" x="106.5" y="104" width="267" height="166"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="aF4-dK-JR4" secondAttribute="height" multiplier="208:129" id="lZn-FY-Ru9"/>
+                        <constraint firstAttribute="width" secondItem="aF4-dK-JR4" secondAttribute="height" multiplier="119:74" id="h35-RY-Ht8"/>
                     </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="centerY" secondItem="aF4-dK-JR4" secondAttribute="centerY" constant="54.5" id="aRZ-rD-xV1"/>
                 <constraint firstAttribute="centerX" secondItem="aF4-dK-JR4" secondAttribute="centerX" id="j1Q-HZ-29v"/>
+                <constraint firstAttribute="centerY" secondItem="aF4-dK-JR4" secondAttribute="centerY" constant="53" id="ru9-Yo-Imt"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

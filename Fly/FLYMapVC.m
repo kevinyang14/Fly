@@ -16,6 +16,7 @@
 #import "FLYPulseCell.h"
 #import "FLYPulseImageUtils.h"
 #import "FLYColor.h"
+#import "FLYAnimation.h"
 
 @interface FLYMapVC () <CLLocationManagerDelegate, MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) CLLocationManager* locationManager;
@@ -28,10 +29,17 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 //Data Storage
-@property (strong, nonatomic) NSMutableDictionary *userLocationsDictionary;               //all user information: userID -> userMetaData
-@property (strong, nonatomic) NSMutableDictionary *pulseLocationsDictionary;    //all pulse information
+@property (strong, nonatomic) NSMutableDictionary *userLocationsDictionary;     //all user information: userID -> userMetadata
+@property (strong, nonatomic) NSMutableDictionary *pulseLocationsDictionary;    //all pulse information: pulseID -> pulseMetadata
 @property (strong, nonatomic) NSMutableArray *pulseLocationsArray;              //sorted array of pulse keys
+//@property (strong, nonatomic) NSMutableArray *annotationViewsArray;
 
+//Flags
+@property (assign, nonatomic) BOOL isAllUsersDownloaded;
+@property (assign, nonatomic) BOOL isAllPulsesDownloaded;
+
+//Global counts
+@property (assign, nonatomic) int regionDidChangeAnimatedCount;
 @end
 
 @implementation FLYMapVC
@@ -64,6 +72,13 @@
     }
     return _pulseLocationsArray;
 }
+
+//- (NSMutableArray *)annotationViewsArray{
+//    if (!_annotationViewsArray) {
+//        _annotationViewsArray = [[NSMutableArray alloc] init];
+//    }
+//    return _annotationViewsArray;
+//}
 
 #pragma mark Setup methods
 
@@ -107,10 +122,16 @@
 }
 
 - (void)setupPulseLocationsFirebase:(Firebase *)pulseLocationsRef{
-    // Listen for when USERS are added
+    // Listen for when PULSES are added
     [pulseLocationsRef observeEventType:FEventTypeChildAdded withBlock:^(FDataSnapshot *snapshot) {
         [self addPulseToArraySorted:snapshot.key];
         [self addPulseToMap:snapshot.value withId:snapshot.key];
+    }];
+    
+    // and FLAG when all pulses have been downloaded
+    // valueEvents are always triggered last
+    [pulseLocationsRef observeSingleEventOfType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
+        self.isAllPulsesDownloaded = YES;
     }];
     
     // or changed
@@ -136,6 +157,12 @@
         [self addUserToMap:snapshot.value withId:snapshot.key];
     }];
     
+    // and FLAG when all users have been downloaded
+    // valueEvents are always triggered last
+    [userLocationsRef observeSingleEventOfType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
+        self.isAllUsersDownloaded = YES;
+    }];
+    
     // or changed
     [userLocationsRef observeEventType:FEventTypeChildChanged withBlock:^(FDataSnapshot *snapshot) {
         if(![snapshot.key isEqualToString:[FLYAppDelegate flyRef].authData.uid]){
@@ -156,16 +183,22 @@
 
 - (void)saveUserLocation:(MKUserLocation *)userLocation{
     Firebase *flyRef = [FLYAppDelegate flyRef];
-    Firebase *userLocationRef = [[flyRef childByAppendingPath:@"userLocations"] childByAppendingPath:flyRef.authData.uid];
     
-    NSNumber *latitude = [NSNumber numberWithDouble:userLocation.location.coordinate.latitude];
-    NSNumber *longitude = [NSNumber numberWithDouble:userLocation.location.coordinate.longitude];
-    NSDictionary *location = @{
-                               @"lat": latitude,
-                               @"long": longitude
-                               };
-    
-    [userLocationRef updateChildValues:location];
+    if (!flyRef.authData) {
+        [self.locationManager stopUpdatingLocation];
+        self.mapView.showsUserLocation = NO;
+    }else{
+        Firebase *userLocationRef = [[flyRef childByAppendingPath:@"userLocations"] childByAppendingPath:flyRef.authData.uid];
+        
+        NSNumber *latitude = [NSNumber numberWithDouble:userLocation.location.coordinate.latitude];
+        NSNumber *longitude = [NSNumber numberWithDouble:userLocation.location.coordinate.longitude];
+        NSDictionary *location = @{
+                                   @"lat": latitude,
+                                   @"long": longitude
+                                   };
+        
+        [userLocationRef updateChildValues:location];
+    }
 }
 
 
@@ -215,31 +248,6 @@
     return cell;
 }
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    FLYPulseCell *cell = (FLYPulseCell*)[tableView dequeueReusableCellWithIdentifier:@"messageCell" forIndexPath:indexPath];
-//    NSString *idKey = [self.pulseLocationsArray objectAtIndex:indexPath.row];
-//    NSDictionary *pulse = [self.pulseLocationsDictionary objectForKey:idKey];
-//    cell.emojiLabel.text = [pulse objectForKey:@"emojis"];
-//    
-//    NSString *senderName = [pulse objectForKey:@"senderName"];
-//    NSLog(@"senderName %@", senderName);
-//    if (!senderName) cell.senderLabel.text = @"Walt Disney";
-//    else cell.senderLabel.text = senderName;
-//    
-//    int orbNum = arc4random()%4;
-//    NSString *orbImageName = [NSString stringWithFormat:@"orb%d",orbNum];
-//
-//    cell.timeBomb.image = [UIImage imageNamed:orbImageName];
-//    cell.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.0];
-//    
-//    //selection yellow highlight
-////    UIView *customColorView = [[UIView alloc] init];
-////    customColorView.backgroundColor = [FLYColor flyYellow];
-////    cell.selectedBackgroundView = customColorView;
-//    return cell;
-//}
-
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *idKey = [self.pulseLocationsArray objectAtIndex:indexPath.row];
@@ -253,17 +261,86 @@
     [self goToPulseLocation:coordinate];
 }
 
+#pragma mark MKMapDelegate
 
-//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    NSString *idKey = [self.pulseLocationsArray objectAtIndex:indexPath.row];
-//    NSDictionary *pulse = [self.pulseLocationsDictionary objectForKey:idKey];
-//    double latitude =[[pulse objectForKey:@"lat"] doubleValue];
-//    double longitude = [[pulse objectForKey:@"long"] doubleValue];
-//
-//    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(latitude, longitude);
-//    [self goToPulseLocation:coordinate];
-//}
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
+    NSLog(@"didUpdateUserLocation");
+    [self saveUserLocation:userLocation];
+    if (!self.isZoomedHome) {
+        [self goHomeFirstTime];
+        self.isZoomedHome = YES;
+    }
+}
+
+#define ZOOMED_HOME_COUNT 2
+
+- (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated{
+//    self.regionDidChangeAnimatedCount++;
+//    if (self.regionDidChangeAnimatedCount >= ZOOMED_HOME_COUNT && self.isAllUsersDownloaded && self.isAllPulsesDownloaded){
+//        //animate all MKAnnotations
+//        [self bounceDropAnimationToViews:self.annotationViewsArray];
+//    }
+    NSLog(@"regionDidChangeAnimated");
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
+    //my annotation
+    if(annotation == mapView.userLocation) return nil;
+    
+    //friends annotations
+    MKAnnotationView *emojiPin = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"emojiPin"];
+    if ([[annotation title] isEqualToString:@"user"]) emojiPin.image = [UIImage imageNamed:@"happy"];
+    
+    //pulse annotations
+    else emojiPin.image = [FLYPulseImageUtils imageFromText:[annotation title]];
+    
+    return emojiPin;
+}
+
+- (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views {
+    NSLog(@"didAddAnnotationViews");
+    if (self.isZoomedHome) {
+        [self bounceDropAnimationToViews:views];
+    }
+}
+
+#pragma mark Animation methods
+
+- (void)bounceDropAnimationToViews:(NSArray *)views{
+    MKAnnotationView *aV;
+    for (aV in views) {
+        // Don't pin drop if annotation is user location
+        if ([aV.annotation isKindOfClass:[MKUserLocation class]]) {
+            continue;
+        }
+        // Check if current annotation is inside visible map rect, else go to next one
+        MKMapPoint point =  MKMapPointForCoordinate(aV.annotation.coordinate);
+        if (!MKMapRectContainsPoint(self.mapView.visibleMapRect, point)) {
+            continue;
+        }
+        CGRect endFrame = aV.frame;
+        // Move annotation out of view
+        aV.frame = CGRectMake(aV.frame.origin.x, aV.frame.origin.y - self.view.frame.size.height, aV.frame.size.width, aV.frame.size.height);
+        // Animate drop
+        [UIView animateWithDuration:0.8 delay:0.04*[views indexOfObject:aV] options: UIViewAnimationOptionCurveLinear animations:^{
+            aV.frame = endFrame;
+            // Animate squash
+        }completion:^(BOOL finished){
+            if (finished) {
+                [UIView animateWithDuration:0.05 animations:^{
+                    aV.transform = CGAffineTransformMakeScale(1.0, 0.8);
+                    
+                }completion:^(BOOL finished){
+                    if (finished) {
+                        [UIView animateWithDuration:0.1 animations:^{
+                            aV.transform = CGAffineTransformIdentity;
+                        }];
+                    }
+                }];
+            }
+        }];
+    }
+}
 
 #pragma mark Map manipulation
 
@@ -272,6 +349,8 @@
         NSString *myUID = [FLYAppDelegate flyRef].authData.uid;
         if(user && ![self.userLocationsDictionary objectForKey:key] && ![key isEqualToString:myUID]) {
             MKPointAnnotation *userPin = [[MKPointAnnotation alloc] init];
+            
+
             userPin.title = @"user";
             double latitude =[[user objectForKey:@"lat"] doubleValue];
             double longitude = [[user objectForKey:@"long"] doubleValue];
@@ -282,8 +361,13 @@
             userMetadata.metadata = user;
             userMetadata.pin = userPin;
             
-            [self.userLocationsDictionary setObject:userMetadata forKey:key];
+            [self.userLocationsDictionary setObject:userMetadata forKey:key];       //add to pulse metadata + key
             [self.mapView addAnnotation:userPin];
+            
+            //NEW EXPERIMENT: all annotation views in array
+//            UIView *annotationView = [self.mapView viewForAnnotation:userPin];
+//            [self.annotationViewsArray addObject:annotationView];
+
         }
     });
 }
@@ -302,27 +386,17 @@
             pulseMetadata.metadata = pulse;
             pulseMetadata.pin = pulsePin;
             
-            [self.pulseLocationsDictionary setObject:pulseMetadata forKey:key];
-            [self.tableView reloadData];
+            [self.pulseLocationsDictionary setObject:pulseMetadata forKey:key];     //add to pulse metadata + key
             [self.mapView addAnnotation:pulsePin];
+            
+            //NEW EXPERIMENT: all annotation views in array
+//            UIView *annotationView = [self.mapView viewForAnnotation:pulsePin];
+//            [self.annotationViewsArray addObject:annotationView];
+            
+            [self.tableView reloadData];    //reload tableView
         }
     });
 }
-
-//- (void) addPulseToMap:(NSDictionary *)pulse withId:(NSString *)key {
-//    dispatch_async(dispatch_get_main_queue(), ^{
-//        if(pulse) {
-//            MKPointAnnotation *pulsePin = [[MKPointAnnotation alloc] init];
-//            
-//            double latitude =[[pulse objectForKey:@"lat"] doubleValue];
-//            double longitude = [[pulse objectForKey:@"long"] doubleValue];
-//            [pulsePin setCoordinate:CLLocationCoordinate2DMake(latitude, longitude)];
-//            pulsePin.title = [pulse objectForKey:@"emojis"];
-//            NSLog(@"emojis %@", pulsePin.title);
-//            [self.mapView addAnnotation:pulsePin];
-//        }
-//    });
-//}
 
 - (void) animatePin:(MKPointAnnotation *)oldPin toNewPosition:(NSDictionary *)newPinLocation {
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -359,62 +433,6 @@
     });
 }
 
-//- (void) animateUser:(FLYUserMetadata *)oldUserMetadata toNewPosition:(NSDictionary *)newUser {
-//    dispatch_async(dispatch_get_main_queue(), ^{
-//        MKPointAnnotation *userPin = oldUserMetadata.pin;
-//        MKAnnotationView *userView = [self.mapView viewForAnnotation:userPin];
-//        if(userView) {
-//            CLLocationCoordinate2D newCoord = CLLocationCoordinate2DMake([[newUser objectForKey:@"lat"] doubleValue], [[newUser objectForKey:@"long"] doubleValue]);
-//            MKMapPoint mapPoint = MKMapPointForCoordinate(newCoord);
-//            
-//            CGPoint toPos;
-//            if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
-//                toPos = [self.mapView convertCoordinate:newCoord toPointToView:self.mapView];
-//            } else {
-//                CGFloat zoomFactor =  self.mapView.visibleMapRect.size.width / self.mapView.bounds.size.width;
-//                toPos.x = mapPoint.x/zoomFactor;
-//                toPos.y = mapPoint.y/zoomFactor;
-//            }
-//            
-//            if (MKMapRectContainsPoint(self.mapView.visibleMapRect, mapPoint)) {
-//                CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
-//                animation.fromValue = [NSValue valueWithCGPoint:userView.center];
-//                animation.toValue = [NSValue valueWithCGPoint:toPos];
-//                animation.duration = 1.5;
-//                animation.delegate = userView;
-//                animation.fillMode = kCAFillModeForwards;
-//                [userView.layer addAnimation:animation forKey:@"positionAnimation"];
-//            }
-//            
-//            userView.center = toPos;
-//            oldUserMetadata.metadata = newUser;
-//            [userPin setCoordinate:newCoord];
-//        }
-//    });
-//}
-
-#pragma mark MKMapDelegate
-
-- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
-    NSLog(@"didUpdateUserLocation");
-    [self saveUserLocation:userLocation];
-    [self goHome];
-}
-
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
-    //my annotation
-    if(annotation == mapView.userLocation) return nil;
-    
-    //friends annotations
-    MKAnnotationView *emojiPin = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"emojiPin"];
-    if ([[annotation title] isEqualToString:@"user"]) emojiPin.image = [UIImage imageNamed:@"happy"];
-    
-    //pulse annotations
-    else emojiPin.image = [FLYPulseImageUtils imageFromText:[annotation title]];
-    
-    return emojiPin;
-}
-
 - (IBAction)home:(id)sender {
     [self goHome];
 }
@@ -423,22 +441,23 @@
     [self.mapView setRegion:MKCoordinateRegionMake(self.mapView.userLocation.location.coordinate, MKCoordinateSpanMake(0.045, 0.045)) animated:YES];
 }
 
+- (void)goHomeFirstTime{
+    [self.mapView setRegion:MKCoordinateRegionMake(self.mapView.userLocation.location.coordinate, MKCoordinateSpanMake(0.045, 0.045)) animated:NO];
+}
+
 - (void)goToPulseLocation:(CLLocationCoordinate2D)coordinate{
     [self.mapView setRegion:MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.0005, 0.0005)) animated:YES];
 }
 
 - (void)goHomeWithBuildings{
-    if (!self.isZoomedHome) {
-        if ([self.mapView respondsToSelector:@selector(camera)]) {
-            [self.mapView setShowsBuildings:YES];
-            MKMapCamera *newCamera = [[self.mapView camera] copy];
-            [newCamera setCenterCoordinate:self.mapView.userLocation.location.coordinate];
-            [newCamera setPitch:20.0];
-            [newCamera setHeading:270.0];
-            [newCamera setAltitude:700.0];
-            [self.mapView setCamera:newCamera animated:YES];
-        }
-        self.isZoomedHome = YES;
+    if ([self.mapView respondsToSelector:@selector(camera)]) {
+        [self.mapView setShowsBuildings:YES];
+        MKMapCamera *newCamera = [[self.mapView camera] copy];
+        [newCamera setCenterCoordinate:self.mapView.userLocation.location.coordinate];
+        [newCamera setPitch:20.0];
+        [newCamera setHeading:270.0];
+        [newCamera setAltitude:700.0];
+        [self.mapView setCamera:newCamera animated:YES];
     }
 }
 

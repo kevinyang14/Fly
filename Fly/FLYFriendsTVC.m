@@ -13,7 +13,6 @@
 #import "SVProgressHUD.h"
 #import <QuartzCore/QuartzCore.h>
 
-
 @interface FLYFriendsTVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableDictionary *allUsersDictionary;
@@ -38,6 +37,19 @@
        NSFontAttributeName, nil]];
 }
 
+- (IBAction)logout:(id)sender {
+    FLYAppDelegate *appDelegate = (FLYAppDelegate *)[UIApplication sharedApplication].delegate;
+    Firebase *flyRef = [FLYAppDelegate flyRef];
+    Firebase *userLocationRef = [[flyRef childByAppendingPath:@"userLocations"] childByAppendingPath:flyRef.authData.uid];
+    [flyRef unauth]; //logout
+    [flyRef removeAllObservers];
+    [userLocationRef removeAllObservers];
+    [[flyRef childByAppendingPath:@"friendship"] removeAllObservers];
+    [[flyRef childByAppendingPath:@"pulseLocations"] removeAllObservers];
+    [[flyRef childByAppendingPath:@"userLocations"] removeAllObservers];
+
+    [appDelegate toggleLogin];
+}
 #pragma mark Firebase Methods
 
 - (void) setupFirebase{
@@ -51,7 +63,8 @@
         [self storeAllFlyUsersWithDictionary:snapshot.value];
         //fetch all my friends
         [myFriendsRef observeSingleEventOfType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
-            self.friendsDictionary = snapshot.value;
+            if (snapshot.value == [NSNull null]) self.friendsDictionary = [[NSMutableDictionary alloc] init];
+            else self.friendsDictionary = snapshot.value;
             [self.tableView reloadData];
             [SVProgressHUD dismiss];
         }];
@@ -78,7 +91,8 @@
 //    transition.type = kCATransitionPush;
 //    transition.subtype = kCATransitionFromRight;
 //    [self.view.window.layer addAnimation:transition forKey:nil];
-    [self dismissViewControllerAnimated:NO completion:nil];
+//    [self dismissViewControllerAnimated:NO completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - Table view data source
@@ -99,15 +113,16 @@
     FLYFriendCell *cell = (FLYFriendCell *)[tableView dequeueReusableCellWithIdentifier:@"friendCell" forIndexPath:indexPath];
     FLYUser *flyUser = [self.allUsersArray objectAtIndex:indexPath.row];
     
-//    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        cell.flyUser = flyUser;
-        cell.fullnameLabel.text = [NSString stringWithFormat:@"%@ %@", flyUser.firstName, flyUser.lastName];
-        cell.username.text = flyUser.userName;
+    cell.flyUser = flyUser;
+    cell.fullnameLabel.text = [NSString stringWithFormat:@"%@ %@", flyUser.firstName, flyUser.lastName];
+    cell.username.text = flyUser.userName;
+
+    //if friend, set button to selected
+    if ([self isFriend:flyUser.uid]) cell.addButton.selected = YES;
+    else cell.addButton.selected = NO;
     
-        //if friend, set button to selected
-        if ([self isFriend:flyUser.uid]) cell.addButton.selected = YES;
-        else cell.addButton.selected = NO;
-//        } completion:NULL];
+    //if friend both ways, set emoticon to blue
+    if ([self isTrueFriend:flyUser.uid]) cell.emoticonImageView.image = [UIImage imageNamed:@"happy"];
     return cell;
 }
 

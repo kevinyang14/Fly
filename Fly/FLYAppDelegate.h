@@ -15,5 +15,6 @@
 +(void)alertWithTitle:(NSString *)title andMessage:(NSString *)msg;
 +(Firebase *)flyRef;
 +(NSString *)userUID;
+- (void)toggleLogin;
 @end
 

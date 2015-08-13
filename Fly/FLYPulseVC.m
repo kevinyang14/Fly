@@ -27,13 +27,16 @@
 
 - (void)segueToMapHelper{
     [self.emojiTextField resignFirstResponder];
+    
 //    CATransition *transition = [CATransition animation];
 //    transition.duration = 0.3;
 //    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
 //    transition.type = kCATransitionPush;
 //    transition.subtype = kCATransitionFromLeft;
 //    [self.view.window.layer addAnimation:transition forKey:nil];
-    [self dismissViewControllerAnimated:NO completion:nil];
+//    [self dismissViewControllerAnimated:NO completion:nil];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark Processing Methods

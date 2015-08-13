@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *fullnameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *username;
 @property (weak, nonatomic) IBOutlet UIButton *addButton;
+@property (weak, nonatomic) IBOutlet UIImageView *emoticonImageView;
 @property (strong, nonatomic) FLYUser *flyUser;
 @end

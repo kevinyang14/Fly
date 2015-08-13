@@ -7,7 +7,7 @@
         <!--WelcomeVC-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="FLYWelcomeVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FLYWelcomeVC" id="vXZ-lx-hvc" customClass="FLYWelcomeVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -210,14 +210,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="c0m-E1-oc8">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="432"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="497"/>
                                 <color key="tintColor" red="0.1019607843" green="0.72549019609999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="FSf-9n-U0k" id="dio-zo-8sw"/>
                                 </connections>
                             </mapView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="foL-7A-OcG">
-                                <rect key="frame" x="0.0" y="432" width="414" height="240"/>
+                                <rect key="frame" x="0.0" y="492" width="414" height="180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="60" id="s3u-Jc-EBM" customClass="FLYPulseCell">
@@ -235,11 +235,17 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orb1" translatesAutoresizingMaskIntoConstraints="NO" id="aD6-ct-ua6">
                                                     <rect key="frame" x="366" y="15" width="30" height="30"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kevin Yang" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wi6-56-P8H">
-                                                    <rect key="frame" x="143" y="0.5" width="200" height="59.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kevin Yang" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wi6-56-P8H">
+                                                    <rect key="frame" x="167" y="0.5" width="151" height="59.5"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="highlightedColor" red="0.99714285714285711" green="0.99428571428571433" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="from" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPl-sg-ZY4">
+                                                    <rect key="frame" x="120" y="0.5" width="41" height="59.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="highlightedColor" red="0.99714285709999995" green="0.99428571430000001" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -255,8 +261,12 @@
                                     <outlet property="delegate" destination="FSf-9n-U0k" id="asU-as-bBz"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UKJ-A3-u0d">
+                                <rect key="frame" x="0.0" y="428" width="414" height="4"/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.72549019609999998" blue="0.80000000000000004" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dH-pP-lHg">
-                                <rect key="frame" x="365" y="377" width="38" height="38"/>
+                                <rect key="frame" x="365" y="443" width="38" height="38"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                 <state key="normal" backgroundImage="home">
@@ -267,10 +277,6 @@
                                     <action selector="home:" destination="FSf-9n-U0k" eventType="touchUpInside" id="ycz-wW-RbA"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UKJ-A3-u0d">
-                                <rect key="frame" x="0.0" y="428" width="414" height="4"/>
-                                <color key="backgroundColor" red="0.1019607843" green="0.72549019609999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -339,7 +345,7 @@
                                     <action selector="sendPulse:" destination="buZ-wI-b7l" eventType="touchUpInside" id="8Yb-jP-p13"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Speak using emojis 😎" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Lr-50-1Rw">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Choose your emoji 😎" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Lr-50-1Rw">
                                 <rect key="frame" x="36" y="110" width="343" height="186"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -411,6 +417,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="addButton" destination="BdL-67-w0a" id="nET-ng-iD6"/>
+                                            <outlet property="emoticonImageView" destination="TI9-R9-n9R" id="C1A-mw-kye"/>
                                             <outlet property="fullnameLabel" destination="CMd-VE-U1J" id="9IN-bX-sQf"/>
                                             <outlet property="username" destination="sbh-0L-tTV" id="MmZ-mh-Jq4"/>
                                         </connections>
@@ -425,6 +432,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add People" id="5MV-dJ-gXG">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="mtP-Ge-RJF">
+                            <connections>
+                                <action selector="logout:" destination="r75-Y8-GVc" id="0jB-xg-oEg"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="map" id="5ol-6h-AEQ">
                             <color key="tintColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -510,7 +522,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ntG-B9-Cxw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HW2-WU-CzS" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FLYMapVC" automaticallyAdjustsScrollViewInsets="NO" id="HW2-WU-CzS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="2Hv-hp-Jdk">
