@@ -16,7 +16,9 @@
 #import "FLYPulseCell.h"
 #import "FLYPulseImageUtils.h"
 #import "FLYColor.h"
-#import "FLYAnimation.h"
+#import "FLYShineAnimation.h"
+#import "PulsingHaloLayer.h"
+#import "MultiplePulsingHaloLayer.h"
 
 @interface FLYMapVC () <CLLocationManagerDelegate, MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) CLLocationManager* locationManager;
@@ -280,7 +282,7 @@
 //        //animate all MKAnnotations
 //        [self bounceDropAnimationToViews:self.annotationViewsArray];
 //    }
-    NSLog(@"regionDidChangeAnimated");
+//    NSLog(@"regionDidChangeAnimated");
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
@@ -298,10 +300,8 @@
 }
 
 - (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views {
-    NSLog(@"didAddAnnotationViews");
-    if (self.isZoomedHome) {
-        [self bounceDropAnimationToViews:views];
-    }
+    //ADD PULSING HALO LAYER
+    [self bounceDropAnimationToViews:views];
 }
 
 #pragma mark Animation methods
@@ -335,6 +335,13 @@
                         [UIView animateWithDuration:0.1 animations:^{
                             aV.transform = CGAffineTransformIdentity;
                         }];
+//                        NSLog(@"FINISHED BOUNCE");
+                        
+                        //PULSE ANIMATION
+//                        PulsingHaloLayer *halo = [PulsingHaloLayer layer];
+//                        halo.position = aV.center;
+////                        NSLog(@"aV.center %@", aV.center);
+//                        [aV.layer addSublayer:halo];
                     }
                 }];
             }
@@ -434,20 +441,51 @@
 }
 
 - (IBAction)home:(id)sender {
+    NSLog(@"goHome");
     [self goHome];
 }
 
+#pragma mark MapZoom Methods
+
+
 - (void)goHome{
-    [self.mapView setRegion:MKCoordinateRegionMake(self.mapView.userLocation.location.coordinate, MKCoordinateSpanMake(0.045, 0.045)) animated:YES];
+    //add 0.01 to the latitude to adjust user upward
+    if ([self isUserLocationValid]) {
+        CLLocationCoordinate2D adjustedHomeCoordinate = [self adjustedHomeCoordinate:self.mapView.userLocation.coordinate];
+        [self.mapView setRegion:MKCoordinateRegionMake(adjustedHomeCoordinate, MKCoordinateSpanMake(0.035, 0.055)) animated:YES];
+    }
 }
 
 - (void)goHomeFirstTime{
-    [self.mapView setRegion:MKCoordinateRegionMake(self.mapView.userLocation.location.coordinate, MKCoordinateSpanMake(0.045, 0.045)) animated:NO];
+    if ([self isUserLocationValid]) {
+        CLLocationCoordinate2D adjustedHomeCoordinate = [self adjustedHomeCoordinate:self.mapView.userLocation.coordinate];
+        [self.mapView setRegion:MKCoordinateRegionMake(adjustedHomeCoordinate, MKCoordinateSpanMake(0.035, 0.055)) animated:NO];
+    }
+}
+
+- (BOOL)isUserLocationValid{
+    return CLLocationCoordinate2DIsValid(self.mapView.userLocation.coordinate);
+}
+
+- (CLLocationCoordinate2D)adjustedHomeCoordinate:(CLLocationCoordinate2D)coordinate{
+    double latitude = coordinate.latitude - 0.008;
+    double longitude = coordinate.longitude;
+    return CLLocationCoordinate2DMake(latitude, longitude);
 }
 
 - (void)goToPulseLocation:(CLLocationCoordinate2D)coordinate{
-    [self.mapView setRegion:MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.0005, 0.0005)) animated:YES];
+    NSLog(@"goToPulseLocation");
+    CLLocationCoordinate2D adjustedPulseCoordinate = [self adjustedPulseCoordinate:coordinate];
+    [self.mapView setRegion:MKCoordinateRegionMake(adjustedPulseCoordinate, MKCoordinateSpanMake(0.0005, 0.0005)) animated:YES];
 }
+
+
+- (CLLocationCoordinate2D)adjustedPulseCoordinate:(CLLocationCoordinate2D)coordinate{
+    double latitude = coordinate.latitude - 0.0008;
+    double longitude = coordinate.longitude;
+    return CLLocationCoordinate2DMake(latitude, longitude);
+}
+
 
 - (void)goHomeWithBuildings{
     if ([self.mapView respondsToSelector:@selector(camera)]) {

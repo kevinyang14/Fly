@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Fly. All rights reserved.
 //
 
-#import "FLYAnimation.h"
+#import "FLYShineAnimation.h"
 #import "FLYColor.h"
 
-@implementation FLYAnimation
+@implementation FLYShineAnimation
 
 +(void)makeViewShine:(UIView*)view
 {

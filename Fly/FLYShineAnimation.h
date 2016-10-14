@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface FLYAnimation : NSObject
+@interface FLYShineAnimation : NSObject
 +(void)makeViewShine:(UIView*)view;
 @end

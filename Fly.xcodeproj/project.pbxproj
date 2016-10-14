@@ -48,7 +48,9 @@
 		0AF100371B7849A2004E6FF0 /* FLYPulseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF100361B7849A2004E6FF0 /* FLYPulseCell.m */; };
 		0AF1003A1B79C53C004E6FF0 /* FLYPulseImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF100391B79C53C004E6FF0 /* FLYPulseImageUtils.m */; };
 		0AF1003D1B79C861004E6FF0 /* FLYPulseMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1003C1B79C861004E6FF0 /* FLYPulseMetadata.m */; };
-		0AF100421B7C0261004E6FF0 /* FLYAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF100411B7C0261004E6FF0 /* FLYAnimation.m */; };
+		0AF100421B7C0261004E6FF0 /* FLYShineAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF100411B7C0261004E6FF0 /* FLYShineAnimation.m */; };
+		0AF100461B7DCA91004E6FF0 /* MultiplePulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF100451B7DCA91004E6FF0 /* MultiplePulsingHaloLayer.m */; };
+		0AF100491B7DCAB3004E6FF0 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF100481B7DCAB3004E6FF0 /* PulsingHaloLayer.m */; };
 		1A74046F2E358A40AF153437 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713346AFFE3C40292A254A08 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -127,8 +129,12 @@
 		0AF100391B79C53C004E6FF0 /* FLYPulseImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYPulseImageUtils.m; sourceTree = "<group>"; };
 		0AF1003B1B79C861004E6FF0 /* FLYPulseMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYPulseMetadata.h; sourceTree = "<group>"; };
 		0AF1003C1B79C861004E6FF0 /* FLYPulseMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYPulseMetadata.m; sourceTree = "<group>"; };
-		0AF100401B7C0261004E6FF0 /* FLYAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYAnimation.h; sourceTree = "<group>"; };
-		0AF100411B7C0261004E6FF0 /* FLYAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYAnimation.m; sourceTree = "<group>"; };
+		0AF100401B7C0261004E6FF0 /* FLYShineAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLYShineAnimation.h; sourceTree = "<group>"; };
+		0AF100411B7C0261004E6FF0 /* FLYShineAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLYShineAnimation.m; sourceTree = "<group>"; };
+		0AF100441B7DCA91004E6FF0 /* MultiplePulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiplePulsingHaloLayer.h; sourceTree = "<group>"; };
+		0AF100451B7DCA91004E6FF0 /* MultiplePulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiplePulsingHaloLayer.m; sourceTree = "<group>"; };
+		0AF100471B7DCAB3004E6FF0 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingHaloLayer.h; sourceTree = "<group>"; };
+		0AF100481B7DCAB3004E6FF0 /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
 		713346AFFE3C40292A254A08 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EBB7314262B1904620E1C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C55660BAD853BB00A56558A9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,8 +208,6 @@
 		0A98F14A1B6E162C00949C0B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0AF100401B7C0261004E6FF0 /* FLYAnimation.h */,
-				0AF100411B7C0261004E6FF0 /* FLYAnimation.m */,
 				0AD5A1791B640DE200BF1939 /* FLYColor.h */,
 				0AD5A17A1B640DE200BF1939 /* FLYColor.m */,
 				0A98F1221B6DB1FA00949C0B /* FLYUser.h */,
@@ -278,6 +282,7 @@
 				0A98F1551B70A40100949C0B /* FLYFirebaseService.m */,
 				0AD5A15D1B637D9500BF1939 /* Main.storyboard */,
 				0A98F1491B6E161A00949C0B /* View Controllers */,
+				0AF100431B7DCA5A004E6FF0 /* Animation */,
 				0A98F14A1B6E162C00949C0B /* Classes */,
 				0A98F1531B707AB900949C0B /* Custom */,
 				0A98F1251B6DDA1500949C0B /* Fonts */,
@@ -313,6 +318,19 @@
 				0AD5A16E1B637D9500BF1939 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AF100431B7DCA5A004E6FF0 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				0AF100471B7DCAB3004E6FF0 /* PulsingHaloLayer.h */,
+				0AF100481B7DCAB3004E6FF0 /* PulsingHaloLayer.m */,
+				0AF100441B7DCA91004E6FF0 /* MultiplePulsingHaloLayer.h */,
+				0AF100451B7DCA91004E6FF0 /* MultiplePulsingHaloLayer.m */,
+				0AF100401B7C0261004E6FF0 /* FLYShineAnimation.h */,
+				0AF100411B7C0261004E6FF0 /* FLYShineAnimation.m */,
+			);
+			name = Animation;
 			sourceTree = "<group>";
 		};
 		15DF01D9C27C29DB2ABF473F /* Pods */ = {
@@ -511,7 +529,7 @@
 				0AF1003A1B79C53C004E6FF0 /* FLYPulseImageUtils.m in Sources */,
 				0AD5A1811B640F6100BF1939 /* FLYSignup1VC.m in Sources */,
 				0A98F1241B6DB1FA00949C0B /* FLYUser.m in Sources */,
-				0AF100421B7C0261004E6FF0 /* FLYAnimation.m in Sources */,
+				0AF100421B7C0261004E6FF0 /* FLYShineAnimation.m in Sources */,
 				0AD5A15C1B637D9500BF1939 /* FLYWelcomeVC.m in Sources */,
 				0A79F1F31B77FAF1007F4DF6 /* FLYPulseVC.m in Sources */,
 				0AD5A1841B640F6D00BF1939 /* FLYSignup2VC.m in Sources */,
@@ -525,6 +543,8 @@
 				0AD5A17B1B640DE200BF1939 /* FLYColor.m in Sources */,
 				0A98F1211B6DAE2500949C0B /* FLYFriendsTVC.m in Sources */,
 				0A98F1481B6DE08200949C0B /* FLYFriendCell.m in Sources */,
+				0AF100491B7DCAB3004E6FF0 /* PulsingHaloLayer.m in Sources */,
+				0AF100461B7DCA91004E6FF0 /* MultiplePulsingHaloLayer.m in Sources */,
 				0A98F1181B6B517900949C0B /* FLYUserMetadata.m in Sources */,
 				0ABDC0821B699D3A0005F984 /* FLYMapVC.m in Sources */,
 			);
